@@ -62,6 +62,7 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
      */
     private void requestRecommandData() {
 
+
     }
 
 }

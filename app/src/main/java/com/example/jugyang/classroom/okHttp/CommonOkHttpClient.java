@@ -2,6 +2,7 @@ package com.example.jugyang.classroom.okHttp;
 
 import com.example.jugyang.classroom.okHttp.Response.CommonJsonCallback;
 import com.example.jugyang.classroom.okHttp.https.HttpsUtils;
+import com.example.jugyang.classroom.okHttp.listener.DisposeDataHandle;
 import com.example.jugyang.classroom.utils.StaticClass;
 
 import java.util.concurrent.TimeUnit;
@@ -26,6 +27,7 @@ import okhttp3.internal.http.StatusLine;
 public class CommonOkHttpClient {
 
     private static OkHttpClient mOkHttpClient;
+    public static Object get;
 
     //为我们的client去配置参数
     static {
@@ -61,6 +63,24 @@ public class CommonOkHttpClient {
     public static Call sendRequest(Request request, CommonJsonCallback commCallback) {
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(commCallback);
+        return call;
+    }
+
+    /**
+     * 通过构造好的Request,Callback去发送请求
+     * @param request
+     * @param handle
+     * @return
+     */
+    public static Call get (Request request, DisposeDataHandle handle) {
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(new CommonJsonCallback(handle));
+        return call;
+    }
+
+    public static Call post (Request request, DisposeDataHandle handle) {
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(new CommonJsonCallback(handle));
         return call;
     }
 }
