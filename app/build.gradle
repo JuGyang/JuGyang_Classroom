@@ -40,7 +40,10 @@ dependencies {
     compile 'cn.bmob.android:bmob-sdk:3.5.0'
     //Circle Image View
     compile 'de.hdodenhof:circleimageview:2.1.0'
-    //okHttp
+    //okHttp 添加之后会与Bmob包发生冲突，待解决
     //compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    //Universalimageloader
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
     testCompile 'junit:junit:4.12'
 }

@@ -3125,13 +3125,13 @@ containing a value of this type.
         public static final int abc_vector_test=0x7f020052;
         public static final int add_pic=0x7f020053;
         public static final int avd_hide_password=0x7f020054;
-        public static final int avd_hide_password_1=0x7f02009b;
-        public static final int avd_hide_password_2=0x7f02009c;
-        public static final int avd_hide_password_3=0x7f02009d;
+        public static final int avd_hide_password_1=0x7f02009c;
+        public static final int avd_hide_password_2=0x7f02009d;
+        public static final int avd_hide_password_3=0x7f02009e;
         public static final int avd_show_password=0x7f020055;
-        public static final int avd_show_password_1=0x7f02009e;
-        public static final int avd_show_password_2=0x7f02009f;
-        public static final int avd_show_password_3=0x7f0200a0;
+        public static final int avd_show_password_1=0x7f02009f;
+        public static final int avd_show_password_2=0x7f0200a0;
+        public static final int avd_show_password_3=0x7f0200a1;
         public static final int back=0x7f020056;
         public static final int bmob_update_btn_check_off_focused_holo_light=0x7f020057;
         public static final int bmob_update_btn_check_off_holo_light=0x7f020058;
@@ -3177,8 +3177,8 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f020080;
         public static final int notification_bg_normal_pressed=0x7f020081;
         public static final int notification_icon_background=0x7f020082;
-        public static final int notification_template_icon_bg=0x7f020099;
-        public static final int notification_template_icon_low_bg=0x7f02009a;
+        public static final int notification_template_icon_bg=0x7f02009a;
+        public static final int notification_template_icon_low_bg=0x7f02009b;
         public static final int notification_tile_bg=0x7f020083;
         public static final int notify_panel_notification_icon_bg=0x7f020084;
         public static final int page_loading_01=0x7f020085;
@@ -3201,6 +3201,7 @@ containing a value of this type.
         public static final int side_nav_bar=0x7f020096;
         public static final int user_avatar=0x7f020097;
         public static final int user_bg=0x7f020098;
+        public static final int xadsdk_img_error=0x7f020099;
     }
     public static final class id {
         public static final int action0=0x7f0d00bf;

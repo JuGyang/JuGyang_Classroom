@@ -93,6 +93,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/jugyang/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/universal-image-loader-1.9.5_4bf87eb13cf13bb4587d11c9fe5d82cfbd8ba13c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/jugyang/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/2.1.1/d5a450f6ad58f779e924381744ecff0ef7e8d453/realm-annotations-2.1.1.jar"
         jumboMode="true"
         optimize="true"

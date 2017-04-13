@@ -61,7 +61,6 @@ public class CommonOkHttpClient {
     public static Call sendRequest(Request request, CommonJsonCallback commCallback) {
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(commCallback);
-
         return call;
     }
 }
