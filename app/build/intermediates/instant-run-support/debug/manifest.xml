@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jugyang.classroom"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:name="com.example.jugyang.classroom.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.jugyang.classroom.ui.SplashActivity"
+            android:theme="@style/NoToolbarFullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Setting Activity -->
+        <activity
+            android:name="com.example.jugyang.classroom.ui.SettingActivity"
+            android:label="Setting" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.example.jugyang.classroom.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Guide Activity -->
+        <activity
+            android:name="com.example.jugyang.classroom.ui.GuideActivity"
+            android:theme="@style/NoToolbarFullscreen" />
+
+        <!-- Login Activity -->
+        <activity
+            android:name="com.example.jugyang.classroom.ui.LoginActivity"
+            android:label="Login" />
+
+        <!-- Register Activity -->
+        <activity
+            android:name="com.example.jugyang.classroom.ui.RegisterActivity"
+            android:label="Register" />
+
+        <!-- ForgetPassword Activity -->
+        <activity
+            android:name="com.example.jugyang.classroom.ui.ForgetPasswordActivity"
+            android:label="ForgetPassword" />
+
+        <!-- PersonalCenter Activity -->
+        <activity
+            android:name="com.example.jugyang.classroom.ui.PersonalCenterActivity"
+            android:label="PersonalCenter"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <provider
+            android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:authorities="com.example.jugyang.classroom.com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
