@@ -1,9 +1,11 @@
 package com.example.jugyang.classroom.fragment;
 
+import android.app.Activity;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,8 @@ import android.widget.ListView;
 
 import com.example.jugyang.classroom.Network.http.RequestCenter;
 import com.example.jugyang.classroom.R;
+import com.example.jugyang.classroom.adapter.CourseAdapter;
+import com.example.jugyang.classroom.entity.recommand.BaseRecommandModel;
 import com.example.jugyang.classroom.okHttp.listener.DisposeDataListener;
 import com.example.jugyang.classroom.utils.MyLog;
 
@@ -25,12 +29,20 @@ import com.example.jugyang.classroom.utils.MyLog;
 
 public class MainpageFragment extends Fragment implements AdapterView.OnItemClickListener {
 
+    private Activity mContext;
     /**
-     *UI
+     * UI
      */
     private View mContentView;
     private ListView mListView;
     private ImageView mLoadingView;
+
+    /**
+     * data
+     */
+    private BaseRecommandModel mRecommandData;
+    private CourseAdapter mAdapter;
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,6 +54,7 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        mContext = getActivity();
         mContentView = inflater.inflate(R.layout.fragment_mainpage, null);
         initView();
         return mContentView;
@@ -70,6 +83,12 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
             public void onSuccess(Object reponseObj) {
                 //完成我们真正的功能逻辑
                 MyLog.e("onSuccess: " + reponseObj.toString());
+                /**
+                 * 获取到数据后更新我们的UI
+                 */
+                mRecommandData = (BaseRecommandModel) reponseObj;
+                showSuccessView();
+
             }
 
             @Override
@@ -78,6 +97,30 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
                 MyLog.e("onFailure" + reasonObj.toString());
             }
         });
+    }
+
+    /**
+     * 请求成功后执行的方法
+     */
+    private void showSuccessView() {
+        //判断数据是否为空
+        if (mRecommandData.data.list != null && mRecommandData.data.list.size() > 0) {
+
+            mLoadingView.setVisibility(View.GONE);
+            mListView.setVisibility(View.VISIBLE);
+            //创建我们的Adapter
+            mAdapter = new CourseAdapter(mContext, mRecommandData.data.list);
+            mListView.setAdapter(mAdapter);
+
+        } else {
+            showErrorView();
+        }
+    }
+    /**
+     * 请求失败后执行的方法
+     */
+    private void showErrorView() {
+
     }
 
 }

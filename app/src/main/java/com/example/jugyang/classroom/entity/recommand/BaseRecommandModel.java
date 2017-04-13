@@ -11,6 +11,7 @@ import com.example.jugyang.classroom.entity.BaseModel;
 
 public class BaseRecommandModel extends BaseModel {
 
+    //保证我们变量名与json的key完全一样
     public String ecode;
     public String emsg;
     public RecommandModel data;

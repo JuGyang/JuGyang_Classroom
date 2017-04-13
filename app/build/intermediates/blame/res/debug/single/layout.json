@@ -298,5 +298,9 @@
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
         "source": "/home/jugyang/.android/build-cache/89297afc0fac4a6251a0e8ed8a0adab02194c6c3/output/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/item_product_card_one_layout.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/item_product_card_one_layout.xml"
     }
 ]
