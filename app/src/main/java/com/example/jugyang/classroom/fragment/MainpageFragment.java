@@ -11,7 +11,10 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.example.jugyang.classroom.Network.http.RequestCenter;
 import com.example.jugyang.classroom.R;
+import com.example.jugyang.classroom.okHttp.listener.DisposeDataListener;
+import com.example.jugyang.classroom.utils.MyLog;
 
 /**
  * Project Name:     Classroom_Toy_v1.0
@@ -62,7 +65,19 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
      */
     private void requestRecommandData() {
 
+        RequestCenter.requestRecommandData(new DisposeDataListener() {
+            @Override
+            public void onSuccess(Object reponseObj) {
+                //完成我们真正的功能逻辑
+                MyLog.e("onSuccess: " + reponseObj.toString());
+            }
 
+            @Override
+            public void onFailure(Object reasonObj) {
+                //提示用户网络有问题
+                MyLog.e("onFailure" + reasonObj.toString());
+            }
+        });
     }
 
 }
