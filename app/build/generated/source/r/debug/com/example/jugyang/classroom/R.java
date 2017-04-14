@@ -3519,8 +3519,8 @@ containing a value of this type.
         public static final int fragment_classes=0x7f040037;
         public static final int fragment_live=0x7f040038;
         public static final int fragment_mainpage=0x7f040039;
-        public static final int item_product_card_one_layout=0x7f04003a;
-        public static final int item_product_card_two_layout=0x7f04003b;
+        public static final int item_product_card_multi_picture_layout=0x7f04003a;
+        public static final int item_product_card_signal_picture_layout=0x7f04003b;
         public static final int nav_header_main=0x7f04003c;
         public static final int notification_action=0x7f04003d;
         public static final int notification_action_tombstone=0x7f04003e;

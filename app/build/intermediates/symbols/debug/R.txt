@@ -1102,8 +1102,8 @@ int layout fragment_articles 0x7f040036
 int layout fragment_classes 0x7f040037
 int layout fragment_live 0x7f040038
 int layout fragment_mainpage 0x7f040039
-int layout item_product_card_one_layout 0x7f04003a
-int layout item_product_card_two_layout 0x7f04003b
+int layout item_product_card_multi_picture_layout 0x7f04003a
+int layout item_product_card_signal_picture_layout 0x7f04003b
 int layout nav_header_main 0x7f04003c
 int layout notification_action 0x7f04003d
 int layout notification_action_tombstone 0x7f04003e

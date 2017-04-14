@@ -1,10 +1,7 @@
 package com.example.jugyang.classroom.adapter;
 
 import android.content.Context;
-import android.media.Image;
-import android.provider.Settings;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +14,7 @@ import android.widget.TextView;
 import com.example.jugyang.classroom.ImagerLoader.ImageLoaderManager;
 import com.example.jugyang.classroom.R;
 import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
-import com.example.jugyang.classroom.utils.MyLog;
+import com.example.jugyang.classroom.utils.Utils;
 
 import java.util.ArrayList;
 
@@ -107,9 +104,10 @@ public class    CourseAdapter extends BaseAdapter {
         if (convertView == null) {
             switch (type) {
                 case CARD_SIGNAL_PIC:
+                    //单图模式
                     mViewHolder = new ViewHolder();
-                    convertView = mInflate.inflate(R.layout.item_product_card_two_layout, parent, false);
-                    //初始化ViewHolder中所用到的控件
+                    convertView = mInflate.inflate(R.layout.item_product_card_signal_picture_layout, parent, false);
+                    //初始化单图ViewHolder中所用到的控件
                     mViewHolder.mLogoView = (CircleImageView) convertView.findViewById(R.id.item_logo_view);
                     mViewHolder.mTitleView = (TextView) convertView.findViewById(R.id.item_title_view);
                     mViewHolder.mInfoView = (TextView) convertView.findViewById(R.id.item_info_view);
@@ -119,14 +117,22 @@ public class    CourseAdapter extends BaseAdapter {
                     mViewHolder.mZanView = (TextView) convertView.findViewById(R.id.item_zan_view);
                     mViewHolder.mProductView = (ImageView) convertView.findViewById(R.id.product_photo_view);
                     break;
-            }
+                case CARD_MULTI_PIC:
+                    //多图模式
+                    mViewHolder = new ViewHolder();
+                    convertView = mInflate.inflate(R.layout.item_product_card_multi_picture_layout, parent, false);
+                    //初始化多图ViewHolder中所用到的控件
+                    mViewHolder.mLogoView = (CircleImageView) convertView.findViewById(R.id.item_logo_view);
+                    mViewHolder.mTitleView = (TextView) convertView.findViewById(R.id.item_title_view);
+                    mViewHolder.mInfoView = (TextView) convertView.findViewById(R.id.item_info_view);
+                    mViewHolder.mFooterView = (TextView) convertView.findViewById(R.id.item_footer_view);
+                    mViewHolder.mPriceView = (TextView) convertView.findViewById(R.id.item_price_view);
+                    mViewHolder.mFromView = (TextView) convertView.findViewById(R.id.item_from_view);
+                    mViewHolder.mZanView = (TextView) convertView.findViewById(R.id.item_zan_view);
+                    mViewHolder.mProductLayout = (LinearLayout) convertView.findViewById(R.id.product_photo_layout);
+                    break;
 
-            if (mViewHolder == null){
-                MyLog.d("fuck5");
-            } else {
-                MyLog.d("fuck6");
             }
-
             convertView.setTag(mViewHolder);
         }
         //有可用的ConvertView
@@ -136,6 +142,7 @@ public class    CourseAdapter extends BaseAdapter {
         //开始绑定数据
         switch (type) {
             case CARD_SIGNAL_PIC:
+                //单图模式
                 mViewHolder.mTitleView.setText(value.title);
                 mViewHolder.mInfoView.setText(value.info.concat("days ago"));
                 mViewHolder.mFooterView.setText(value.text);
@@ -148,8 +155,41 @@ public class    CourseAdapter extends BaseAdapter {
                 mImageLoader.displayImage(mViewHolder.mLogoView, value.logo);
                 mImageLoader.displayImage(mViewHolder.mProductView, value.url.get(0));
                 break;
+            case CARD_MULTI_PIC:
+                //多图模式
+                //为我们的LogoView加载异步图片
+                mImageLoader.displayImage(mViewHolder.mLogoView, value.logo);
+                mViewHolder.mTitleView.setText(value.title);
+                mViewHolder.mInfoView.setText(value.info.concat("days ago"));
+                mViewHolder.mFooterView.setText(value.text);
+                mViewHolder.mPriceView.setText(value.price);
+                mViewHolder.mFromView.setText(value.from);
+                mViewHolder.mZanView.setText("like ".concat(value.zan));
+                //动态添加我们的ImageView到我们的水平ScrollView中
+                mViewHolder.mProductLayout.removeAllViews();//删除已有的图片
+                for (String url: value.url) {
+                    mViewHolder.mProductLayout.addView(createImageView(url));
+                }
+                break;
+
         }
         return convertView;
+    }
+
+    /**
+     * 动态创建我们的ImageView
+     * @return
+     */
+    private ImageView createImageView(String url) {
+        ImageView imageView = new ImageView(mContext);
+        //与要添加到的ViewGroup保持一致
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                Utils.dip2px(mContext, 100), LinearLayout.LayoutParams.MATCH_PARENT);
+        params.leftMargin = Utils.dip2px(mContext, 5);
+        imageView.setLayoutParams(params);
+        mImageLoader.displayImage(imageView, url);
+
+        return imageView;
     }
 
     /**
