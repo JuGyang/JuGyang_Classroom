@@ -104,6 +104,10 @@
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/activity_register.xml"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/item_home_recommand_layout.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/item_home_recommand_layout.xml"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
         "source": "/home/jugyang/.android/build-cache/89297afc0fac4a6251a0e8ed8a0adab02194c6c3/output/res/layout/design_text_input_password_icon.xml"
     },
@@ -222,6 +226,10 @@
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/page_item_one.xml",
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/page_item_one.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/listview_home_head_layout.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/listview_home_head_layout.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/activity_guide.xml",

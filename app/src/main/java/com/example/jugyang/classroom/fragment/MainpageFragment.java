@@ -19,6 +19,7 @@ import com.example.jugyang.classroom.adapter.CourseAdapter;
 import com.example.jugyang.classroom.entity.recommand.BaseRecommandModel;
 import com.example.jugyang.classroom.okHttp.listener.DisposeDataListener;
 import com.example.jugyang.classroom.utils.MyLog;
+import com.example.jugyang.classroom.view.home.HomeHeaderLayout;
 
 /**
  * Project Name:     Classroom_Toy_v1.0
@@ -108,6 +109,10 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
 
             mLoadingView.setVisibility(View.GONE);
             mListView.setVisibility(View.VISIBLE);
+
+            //为ListView添加列表头
+            mListView.addHeaderView(new HomeHeaderLayout(mContext, mRecommandData.data.head));
+
             //创建我们的Adapter
             mAdapter = new CourseAdapter(mContext, mRecommandData.data.list);
             mListView.setAdapter(mAdapter);
