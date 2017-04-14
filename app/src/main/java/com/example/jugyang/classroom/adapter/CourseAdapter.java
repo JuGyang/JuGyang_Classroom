@@ -2,6 +2,7 @@ package com.example.jugyang.classroom.adapter;
 
 import android.content.Context;
 import android.media.Image;
+import android.provider.Settings;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,15 +31,15 @@ import de.hdodenhof.circleimageview.CircleImageView;
  * Function:         function
  */
 
-public class CourseAdapter extends BaseAdapter {
+public class    CourseAdapter extends BaseAdapter {
 
     /**
      *  ListView不同类型的item标识
      */
     private static final int CARD_COUNT = 4;
     private static final int VIDEO_TYPE = 0x00;
-    private static final int CARD_SIGNAL_PIC = 0x01;
-    private static final int CARD_MULTI_PIC = 0x02;
+    private static final int CARD_SIGNAL_PIC = 0x02;
+    private static final int CARD_MULTI_PIC = 0x01;
     private static final int CARD_VIEW_PAGER = 0x03;
 
     private Context mContext;
@@ -100,13 +101,14 @@ public class CourseAdapter extends BaseAdapter {
         //1.获取数据的type类型
         int type = getItemViewType(position);
         final RecommandBodyValue value = (RecommandBodyValue) getItem(position);
+        //System.out.println("fuck:" + type);
 
         //为空表明当前没有可使用的缓存View
         if (convertView == null) {
             switch (type) {
                 case CARD_SIGNAL_PIC:
                     mViewHolder = new ViewHolder();
-                    convertView = mInflate.inflate(R.layout.item_product_card_one_layout, parent, false);
+                    convertView = mInflate.inflate(R.layout.item_product_card_two_layout, parent, false);
                     //初始化ViewHolder中所用到的控件
                     mViewHolder.mLogoView = (CircleImageView) convertView.findViewById(R.id.item_logo_view);
                     mViewHolder.mTitleView = (TextView) convertView.findViewById(R.id.item_title_view);
@@ -115,9 +117,14 @@ public class CourseAdapter extends BaseAdapter {
                     mViewHolder.mPriceView = (TextView) convertView.findViewById(R.id.item_price_view);
                     mViewHolder.mFromView = (TextView) convertView.findViewById(R.id.item_from_view);
                     mViewHolder.mZanView = (TextView) convertView.findViewById(R.id.item_zan_view);
-                    mViewHolder.mProductLayout = (LinearLayout) convertView.findViewById(R.id.product_photo_layout);
-
+                    mViewHolder.mProductView = (ImageView) convertView.findViewById(R.id.product_photo_view);
                     break;
+            }
+
+            if (mViewHolder == null){
+                MyLog.d("fuck5");
+            } else {
+                MyLog.d("fuck6");
             }
 
             convertView.setTag(mViewHolder);
@@ -165,7 +172,7 @@ public class CourseAdapter extends BaseAdapter {
         //Card One特有属性
         private LinearLayout mProductLayout;
         //Card Two特有属性
-        private ImageView mProductView;
+        private ImageView   mProductView;
         //Card Three特有属性
         private ViewPager mViewPager;
     }

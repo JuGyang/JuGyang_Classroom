@@ -3,42 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/08a4a3ac176d64fd18c637fb9d7ba88d67d1424e/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5a9a7f520e84479521c77d7b8629790e567f175c">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_993dc9a937a93cfc0a637960cb1fc0f476875585/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/f2e13b2f6ba60d7dcf506521248695f20dcf184d/output/jars/libs/rxandroid-1.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="19beef6debb6a22febc28777464c71bfccbafe3d">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxandroid-1.2.0_add706edde8ef138fa5d621779a742a30fa28cf2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/9e27b0152f20beb8238f50f484b2371ff642b291/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3a7d6e6b00c94faf78addd5b117492616fe85187/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/f2e13b2f6ba60d7dcf506521248695f20dcf184d/output/jars/libs/BmobSDK_3.5.0_20160630.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8eb5c605a02f792e326c5ac8e4feb2c18dd171ad">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/BmobSDK_3.5.0_20160630_750ae8cee14ad599935fb1b3972fe93b16b2a1c1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -52,80 +16,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="072189c35a0f45be67933bc5d51fddb64f9f0455">
+        sha1="c17360fa6594a3d2d86182834ea48546560102a7">
         <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_63b4a56c7bff05dc0dce15a4acef93bec5b86d49/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/f2e13b2f6ba60d7dcf506521248695f20dcf184d/output/jars/libs/okio-1.7.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bbeca71da43c8f4bc9ceedec002060f53437ad26">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.7.0_8d8e7d662ae30922bdad70909d96103665ca3700/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/f2e13b2f6ba60d7dcf506521248695f20dcf184d/output/jars/libs/gson-2.6.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="dd625f5e7bba8235782b5dc4244c3fd26953190f">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.2_5959f20deee6af208f03fbb4888eacd1c035fb5c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/f2e13b2f6ba60d7dcf506521248695f20dcf184d/output/jars/libs/rxjava-1.1.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ac615240b277e7fd3950d7b35f73b733f310cede">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-1.1.6_aa4a152527c50c8d44f9669c5ce2f96902b3ce63/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/f2e13b2f6ba60d7dcf506521248695f20dcf184d/output/jars/libs/okhttp-3.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e7cb33d9f82d3b8521c6594b180f4dd9fc6d49f2">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.1_ffeeb255cd765f124610a7e36ffa432739ddd28f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/universal-image-loader-1.9.5_4bf87eb13cf13bb4587d11c9fe5d82cfbd8ba13c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/2.1.1/d5a450f6ad58f779e924381744ecff0ef7e8d453/realm-annotations-2.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d5a450f6ad58f779e924381744ecff0ef7e8d453">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/realm-annotations-2.1.1_1463d5e2a48aa3c116d8a5675548d65d361ccf1a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/2f7bdb38ec78bbef87ce78996043a153b9ffb0b7/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a8b6e31343b6de9a37f6d81d7fdda29b3b4a90de">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7010359ba0cacf9074091a8b43a1c4bbf5be1706/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/.android/build-cache/f2e13b2f6ba60d7dcf506521248695f20dcf184d/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e47f10299673ab68f24c595f96b18086cc9a8384">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f920e56c4af581f522f03d495b94e61f23313ccf/classes.dex" />
     </item>
 
 </items>
