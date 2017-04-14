@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
-        "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_btn_radio_material.xml"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_btn_radio_material.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",

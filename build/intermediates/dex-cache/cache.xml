@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/libs/photoview-library-1.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9000943d77c17d231bf3141a712828f2636c2ea">
+        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/2/photoview-library-1.2.2_d9987873fadbd6c8aac4d96c95e985c4fbae55d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"

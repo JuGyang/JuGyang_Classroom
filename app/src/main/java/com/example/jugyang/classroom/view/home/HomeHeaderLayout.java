@@ -34,7 +34,7 @@ public class HomeHeaderLayout extends RelativeLayout {
      */
     private RelativeLayout mRootView;
     private AutoScrollViewPager mViewPager;
-    private CirclePageIndicator mPagerIndictor;
+    private CirclePageIndicator mPagerIndicator;
     private TextView mHotView;
     private PhotoPagerAdapter mAdapter;
     private ImageView[] mImageViews = new ImageView[4];
@@ -62,7 +62,7 @@ public class HomeHeaderLayout extends RelativeLayout {
         LayoutInflater inflater = LayoutInflater.from(mContext);
         mRootView = (RelativeLayout) inflater.inflate(R.layout.listview_home_head_layout, this);
         mViewPager = (AutoScrollViewPager) mRootView.findViewById(R.id.pager);
-        mPagerIndictor = (CirclePageIndicator) mRootView.findViewById(R.id.pager_indicator_view);
+        mPagerIndicator = (CirclePageIndicator) mRootView.findViewById(R.id.pager_indicator_view);
         mHotView = (TextView) mRootView.findViewById(R.id.zuixing_view);
         mImageViews[0] = (ImageView) mRootView.findViewById(R.id.head_image_one);
         mImageViews[1] = (ImageView) mRootView.findViewById(R.id.head_image_two);
@@ -74,7 +74,7 @@ public class HomeHeaderLayout extends RelativeLayout {
         mAdapter = new PhotoPagerAdapter(mContext, mHeaderValue.ads, true);
         mViewPager.setAdapter(mAdapter);
         mViewPager.startAutoScroll(3000);
-        mPagerIndictor.setViewPager(mViewPager);
+        mPagerIndicator.setViewPager(mViewPager);
 
         for (int i = 0; i < mImageViews.length; i++) {
             mImageLoader.displayImage(mImageViews[i], mHeaderValue.middle.get(i));
