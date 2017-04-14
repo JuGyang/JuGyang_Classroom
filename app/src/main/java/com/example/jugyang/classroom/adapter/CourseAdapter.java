@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.jugyang.classroom.ImagerLoader.ImageLoaderManager;
 import com.example.jugyang.classroom.R;
 import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
+import com.example.jugyang.classroom.util.Util;
 import com.example.jugyang.classroom.utils.Utils;
 
 import java.util.ArrayList;
@@ -131,6 +132,18 @@ public class    CourseAdapter extends BaseAdapter {
                     mViewHolder.mZanView = (TextView) convertView.findViewById(R.id.item_zan_view);
                     mViewHolder.mProductLayout = (LinearLayout) convertView.findViewById(R.id.product_photo_layout);
                     break;
+                case CARD_VIEW_PAGER:
+                    mViewHolder = new ViewHolder();
+                    convertView = mInflate.inflate(R.layout.item_product_card_view_pager_layout, parent, false);
+
+                    mViewHolder.mViewPager = (ViewPager) convertView.findViewById(R.id.pager);
+                    mViewHolder.mViewPager.setPageMargin(Utils.dip2px(mContext, 12));
+                    //为我们的VIewPager填充数据
+                    ArrayList<RecommandBodyValue> recommandList = Util.handleData(value);
+                    mViewHolder.mViewPager.setAdapter(new HotSaleAdapter(mContext, recommandList));
+                    //一开始就让我们的ViewPager处于一个比较靠中间的Item项
+                    mViewHolder.mViewPager.setCurrentItem(recommandList.size() * 100);
+                    break;
 
             }
             convertView.setTag(mViewHolder);
@@ -170,6 +183,8 @@ public class    CourseAdapter extends BaseAdapter {
                 for (String url: value.url) {
                     mViewHolder.mProductLayout.addView(createImageView(url));
                 }
+                break;
+            case CARD_VIEW_PAGER:
                 break;
 
         }

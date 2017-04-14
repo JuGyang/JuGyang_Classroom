@@ -18,6 +18,6 @@ public class HttpConstants {
     /**
      * 首页产品请求接口
      */
-    public static String HOME_RECOMMAND = ROOT_URL + "/product/home_data_two.json   ";
+    public static String HOME_RECOMMAND = ROOT_URL + "/product/home_data_three.json   ";
 
 }
