@@ -23,9 +23,11 @@ import android.graphics.Rect;
 import android.hardware.Camera;
 import android.os.Build;
 import android.os.Handler;
+import android.util.Log;
 import android.view.SurfaceHolder;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * This object wraps the Camera service object and expects to be the only one talking to it. The
@@ -345,5 +347,69 @@ public final class CameraManager {
 	public Context getContext() {
 		return context;
 	}
+
+  /**
+   * 通过设置Camera打开闪光灯
+   */
+  public void turnLightOn() {
+    if (camera == null) {
+      return;
+    }
+    Camera.Parameters parameters = camera.getParameters();
+    if (parameters == null) {
+      return;
+    }
+
+    List<String> flashModes = parameters.getSupportedFlashModes();
+    if (flashModes == null) {
+      return;
+    }
+    String flashMode = parameters.getFlashMode();
+    Log.i(TAG, "Flash mode: " + flashMode);
+    Log.i(TAG, "Flash modes: " + flashModes);
+    // 闪光灯关闭状态
+    if (!Camera.Parameters.FLASH_MODE_TORCH.equals(flashMode)) {
+      // Turn on the flash
+      if (flashModes.contains(Camera.Parameters.FLASH_MODE_TORCH)) {
+        parameters.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+        camera.setParameters(parameters);
+        camera.startPreview();
+      } else {
+      }
+    }
+  }
+
+
+
+  /**
+   * 通过设置Camera关闭闪光灯
+   *
+   * @param mCamera
+   */
+  public void turnLightOff() {
+    if (camera == null) {
+      return;
+    }
+    Camera.Parameters parameters = camera.getParameters();
+    if (parameters == null) {
+      return;
+    }
+    List<String> flashModes = parameters.getSupportedFlashModes();
+    String flashMode = parameters.getFlashMode();
+    // Check if camera flash exists
+    if (flashModes == null) {
+      return;
+    }
+    // 闪光灯打开状态
+    if (!Camera.Parameters.FLASH_MODE_OFF.equals(flashMode)) {
+      // Turn off the flash
+      if (flashModes.contains(Camera.Parameters.FLASH_MODE_OFF)) {
+        parameters.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
+        camera.setParameters(parameters);
+      } else {
+        Log.e(TAG, "FLASH_MODE_OFF not supported");
+      }
+    }
+  }
 
 }

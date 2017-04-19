@@ -14,6 +14,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Vibrator;
 import android.provider.MediaStore;
+import android.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -22,9 +23,12 @@ import android.view.MenuItem;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.jugyang.classroom.R;
+import com.example.jugyang.classroom.utils.MyLog;
 import com.example.jugyang.classroom.zxing.camera.CameraManager;
 import com.example.jugyang.classroom.zxing.decoding.CaptureActivityHandler;
 import com.example.jugyang.classroom.zxing.decoding.InactivityTimer;
@@ -70,7 +74,12 @@ public class CaptureActivity extends AppCompatActivity implements Callback {
     private ProgressDialog mProgress;
     private String photo_path;
     private Bitmap scanBitmap;
-    //	private Button cancelScanButton;
+
+    private Button mButtonBack;
+    private Button createBtn;
+    private Button photoBtn;
+    private Button flashBtn;
+    private boolean isFlash = false;
 
     /**
      * Called when the activity is first created.
@@ -79,49 +88,51 @@ public class CaptureActivity extends AppCompatActivity implements Callback {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrcode_capture_layout);
-        //ViewUtil.addTopView(getApplicationContext(), this, R.string.scan_card);
         CameraManager.init(getApplication());
         viewfinderView = (ViewfinderView) findViewById(R.id.viewfinder_content);
-//		cancelScanButton = (Button) this.findViewById(R.id.btn_cancel_scan);
+
+        mButtonBack = (Button) findViewById(R.id.button_back);
+        mButtonBack.setOnClickListener(click);
+        createBtn = (Button) findViewById(R.id.qrcode_btn);
+        createBtn.setOnClickListener(click);
+        photoBtn = (Button) findViewById(R.id.photo_btn);
+        photoBtn.setOnClickListener(click);
+        flashBtn = (Button) findViewById(R.id.flash_btn);
+        flashBtn.setOnClickListener(click);
+
         hasSurface = false;
         inactivityTimer = new InactivityTimer(this);
 
-        //添加toolbar
-        //addToolbar();
     }
 
-//    private void addToolbar() {
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-////        ImageView more = (ImageView) findViewById(R.id.scanner_toolbar_more);
-////        assert more != null;
-////        more.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View v) {
-////
-////            }
-////        });
-//        setSupportActionBar(toolbar);
-//    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.scanner_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.scan_local:
+    private View.OnClickListener click = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            int id = v.getId();
+            if (id == R.id.button_back) {
+                MyLog.d("Mark_back");
+                finish();
+            } else if (id == R.id.flash_btn) {
+                if (!isFlash) {
+                    CameraManager.get().turnLightOn();
+                } else  {
+                    CameraManager.get().turnLightOff();
+                }
+                isFlash = !isFlash;
+            } else if (id == R.id.photo_btn) {
                 //打开手机中的相册
                 Intent innerIntent = new Intent(Intent.ACTION_GET_CONTENT); //"android.intent.action.GET_CONTENT"
                 innerIntent.setType("image/*");
                 Intent wrapperIntent = Intent.createChooser(innerIntent, "选择二维码图片");
-                this.startActivityForResult(wrapperIntent, REQUEST_CODE_SCAN_GALLERY);
-                return true;
+                startActivityForResult(wrapperIntent, REQUEST_CODE_SCAN_GALLERY);
+            } else if (id == R.id.qrcode_btn) {
+                //跳转到生成二维码页面
+                finish();
+            }
         }
-        return super.onOptionsItemSelected(item);
-    }
+    };
+
+
 
     @Override
     protected void onActivityResult(final int requestCode, int resultCode, Intent data) {

@@ -81,7 +81,12 @@
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
 
         <!-- QRcode Activity -->
-        <activity android:name="com.example.jugyang.classroom.zxing.activity.CaptureActivity" />
+        <activity
+            android:name="com.example.jugyang.classroom.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoToolbarFullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
