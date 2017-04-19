@@ -15,6 +15,11 @@
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -74,6 +79,9 @@
             android:name="com.example.jugyang.classroom.ui.PersonalCenterActivity"
             android:label="PersonalCenter"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- QRcode Activity -->
+        <activity android:name="com.example.jugyang.classroom.zxing.activity.CaptureActivity" />
     </application>
 
 </manifest>

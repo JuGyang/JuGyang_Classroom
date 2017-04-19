@@ -20,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.jugyang.classroom.fragment.ArticlesFragment;
 import com.example.jugyang.classroom.fragment.ClassesFragment;
@@ -28,6 +29,8 @@ import com.example.jugyang.classroom.fragment.MainpageFragment;
 import com.example.jugyang.classroom.ui.PersonalCenterActivity;
 import com.example.jugyang.classroom.ui.SettingActivity;
 import com.example.jugyang.classroom.utils.MyLog;
+import com.example.jugyang.classroom.utils.StaticClass;
+import com.example.jugyang.classroom.zxing.activity.CaptureActivity;
 import com.tencent.bugly.crashreport.CrashReport;
 
 import java.util.ArrayList;
@@ -118,7 +121,9 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivityForResult(intent, StaticClass.QRCODE_REQUEST_CODE);
         }
 
         return super.onOptionsItemSelected(item);
@@ -235,5 +240,13 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) { //RESULT_OK = -1
+            Bundle bundle = data.getExtras();
+            String scanResult = bundle.getString("result");
+            Toast.makeText(MainActivity.this, scanResult, Toast.LENGTH_LONG).show();
+        }
+    }
 }

@@ -16,12 +16,12 @@
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable-hdpi/page_loading_10.png"
     },
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable-hdpi/page_loading_03.png",
-        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable-hdpi/page_loading_03.png"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable-hdpi/page_loading_06.png",
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable-hdpi/page_loading_06.png"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable-hdpi/page_loading_03.png",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable-hdpi/page_loading_03.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable-hdpi/page_loading_08.png",

@@ -23,6 +23,10 @@
     <color name="result_minor_text">#ffc0c0c0</color>
     <color name="result_points">#c000ff00</color>
     <color name="system_bar_color">#fed952</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
 
 
 </resources>

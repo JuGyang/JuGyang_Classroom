@@ -76,12 +76,12 @@
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/item_hot_product_pager_layout.xml",
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/item_hot_product_pager_layout.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/content_main.xml",
@@ -236,6 +236,10 @@
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/activity_guide.xml"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/item_qrcode_item.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/item_qrcode_item.xml"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/fragment_mainpage.xml",
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/fragment_mainpage.xml"
     },
@@ -318,6 +322,10 @@
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/activity_qrcode_capture_layout.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/activity_qrcode_capture_layout.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",

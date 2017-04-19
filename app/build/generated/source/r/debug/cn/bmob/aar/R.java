@@ -30,45 +30,45 @@ public final class R {
         public static final int bmob_update_wifi_disable = 0x7f02006a;
     }
     public static final class id {
-        public static final int bmob_update_content = 0x7f0d00a5;
-        public static final int bmob_update_id_cancel = 0x7f0d00a8;
-        public static final int bmob_update_id_check = 0x7f0d00a6;
-        public static final int bmob_update_id_close = 0x7f0d00a4;
-        public static final int bmob_update_id_ignore = 0x7f0d00a9;
-        public static final int bmob_update_id_ok = 0x7f0d00a7;
-        public static final int bmob_update_wifi_indicator = 0x7f0d00a3;
+        public static final int bmob_update_content = 0x7f0e00b3;
+        public static final int bmob_update_id_cancel = 0x7f0e00b6;
+        public static final int bmob_update_id_check = 0x7f0e00b4;
+        public static final int bmob_update_id_close = 0x7f0e00b2;
+        public static final int bmob_update_id_ignore = 0x7f0e00b7;
+        public static final int bmob_update_id_ok = 0x7f0e00b5;
+        public static final int bmob_update_wifi_indicator = 0x7f0e00b1;
     }
     public static final class layout {
-        public static final int bmob_update_dialog = 0x7f040024;
+        public static final int bmob_update_dialog = 0x7f040025;
     }
     public static final class string {
-        public static final int BMAppUpdate = 0x7f070019;
-        public static final int BMBreak_Network = 0x7f07001a;
-        public static final int BMDialog_InstallAPK = 0x7f07001b;
-        public static final int BMGprsCondition = 0x7f07001c;
-        public static final int BMIgnore = 0x7f07001d;
-        public static final int BMNewVersion = 0x7f07001e;
-        public static final int BMNotNow = 0x7f07001f;
-        public static final int BMTargetSize = 0x7f070020;
-        public static final int BMToast_IsUpdating = 0x7f070021;
-        public static final int BMUpdateCheck = 0x7f070022;
-        public static final int BMUpdateContent = 0x7f070023;
-        public static final int BMUpdateNow = 0x7f070024;
-        public static final int BMUpdateSize = 0x7f070025;
-        public static final int BMUpdateTitle = 0x7f070026;
-        public static final int bmob_common_action_cancel = 0x7f070034;
-        public static final int bmob_common_action_continue = 0x7f070035;
-        public static final int bmob_common_action_info_exist = 0x7f070036;
-        public static final int bmob_common_action_pause = 0x7f070037;
-        public static final int bmob_common_download_failed = 0x7f070038;
-        public static final int bmob_common_download_finish = 0x7f070039;
-        public static final int bmob_common_download_notification_prefix = 0x7f07003a;
-        public static final int bmob_common_info_interrupt = 0x7f07003b;
-        public static final int bmob_common_network_break_alert = 0x7f07003c;
-        public static final int bmob_common_patch_finish = 0x7f07003d;
-        public static final int bmob_common_pause_notification_prefix = 0x7f07003e;
-        public static final int bmob_common_silent_download_finish = 0x7f07003f;
-        public static final int bmob_common_start_download_notification = 0x7f070040;
-        public static final int bmob_common_start_patch_notification = 0x7f070041;
+        public static final int BMAppUpdate = 0x7f080019;
+        public static final int BMBreak_Network = 0x7f08001a;
+        public static final int BMDialog_InstallAPK = 0x7f08001b;
+        public static final int BMGprsCondition = 0x7f08001c;
+        public static final int BMIgnore = 0x7f08001d;
+        public static final int BMNewVersion = 0x7f08001e;
+        public static final int BMNotNow = 0x7f08001f;
+        public static final int BMTargetSize = 0x7f080020;
+        public static final int BMToast_IsUpdating = 0x7f080021;
+        public static final int BMUpdateCheck = 0x7f080022;
+        public static final int BMUpdateContent = 0x7f080023;
+        public static final int BMUpdateNow = 0x7f080024;
+        public static final int BMUpdateSize = 0x7f080025;
+        public static final int BMUpdateTitle = 0x7f080026;
+        public static final int bmob_common_action_cancel = 0x7f080034;
+        public static final int bmob_common_action_continue = 0x7f080035;
+        public static final int bmob_common_action_info_exist = 0x7f080036;
+        public static final int bmob_common_action_pause = 0x7f080037;
+        public static final int bmob_common_download_failed = 0x7f080038;
+        public static final int bmob_common_download_finish = 0x7f080039;
+        public static final int bmob_common_download_notification_prefix = 0x7f08003a;
+        public static final int bmob_common_info_interrupt = 0x7f08003b;
+        public static final int bmob_common_network_break_alert = 0x7f08003c;
+        public static final int bmob_common_patch_finish = 0x7f08003d;
+        public static final int bmob_common_pause_notification_prefix = 0x7f08003e;
+        public static final int bmob_common_silent_download_finish = 0x7f08003f;
+        public static final int bmob_common_start_download_notification = 0x7f080040;
+        public static final int bmob_common_start_patch_notification = 0x7f080041;
     }
 }

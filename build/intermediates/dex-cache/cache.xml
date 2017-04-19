@@ -12,21 +12,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="710ff35f18f37d0dbbffa459ba8957eaa3ad5391">
+        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_63b4a56c7bff05dc0dce15a4acef93bec5b86d49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
         <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8f9cad4dd67aaac7424d759ccebf1e023ad7c2fa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c17360fa6594a3d2d86182834ea48546560102a7">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_63b4a56c7bff05dc0dce15a4acef93bec5b86d49/classes.dex" />
     </item>
 
 </items>

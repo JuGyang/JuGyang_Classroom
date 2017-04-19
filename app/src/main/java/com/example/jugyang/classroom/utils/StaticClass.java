@@ -27,5 +27,7 @@ public class StaticClass {
     public static final int RESULT_REQUEST_CODE = 102;
     //超时参数
     public static final int TIME_OUT = 30;
+    //
+    public static final int QRCODE_REQUEST_CODE = 103;
 }
 
