@@ -9,8 +9,10 @@ import android.graphics.BitmapFactory;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.os.Vibrator;
 import android.provider.MediaStore;
@@ -72,7 +74,7 @@ public class CaptureActivity extends AppCompatActivity implements Callback {
     private static final float BEEP_VOLUME = 0.10f;
     private boolean vibrate;
     private ProgressDialog mProgress;
-    private String photo_path;
+    private Uri photo_path;
     private Bitmap scanBitmap;
 
     private Button mButtonBack;
@@ -134,22 +136,28 @@ public class CaptureActivity extends AppCompatActivity implements Callback {
 
 
 
+
     @Override
     protected void onActivityResult(final int requestCode, int resultCode, Intent data) {
-        if (requestCode==RESULT_OK) {
+        MyLog.d("Mark into");
+        if (resultCode==RESULT_OK) {
             switch (requestCode) {
                 case REQUEST_CODE_SCAN_GALLERY:
                     //获取选中图片的路径
-                    Cursor cursor = getContentResolver().query(data.getData(), null, null, null, null);
-                    if (cursor.moveToFirst()) {
-                        photo_path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
-                    }
-                    cursor.close();
+//                    Cursor cursor = getContentResolver().query(data.getData(), null, null, null, null);
+//                    if (cursor.moveToFirst()) {
+//                        photo_path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
+//                    }
+//                    cursor.close();
+
+                    photo_path = data.getData();
+                    System.out.println("Classroom " + photo_path);
 
                     mProgress = new ProgressDialog(CaptureActivity.this);
                     mProgress.setMessage("正在扫描...");
                     mProgress.setCancelable(false);
                     mProgress.show();
+                    MyLog.d("Scanning");
 
                     new Thread(new Runnable() {
                         @Override
@@ -160,18 +168,27 @@ public class CaptureActivity extends AppCompatActivity implements Callback {
 //                                m.what = R.id.decode_succeeded;
 //                                m.obj = result.getText();
 //                                handler.sendMessage(m);
-                                Intent resultIntent = new Intent();
-                                Bundle bundle = new Bundle();
-                                bundle.putString("result",result.getText());
+//                                Intent resultIntent = new Intent();
+//                                Bundle bundle = new Bundle();
+//                                bundle.putString("result",result.getText());
 //                                bundle.putParcelable("bitmap",result.get);
-                                resultIntent.putExtras(bundle);
-                                CaptureActivity.this.setResult(RESULT_OK, resultIntent);
+//                                resultIntent.putExtras(bundle);
+//                                CaptureActivity.this.setResult(RESULT_OK, resultIntent);
+                                String recode = (result.toString());
+                                Intent data = new Intent();
+                                data.putExtra("result", recode);
+                                setResult(300, data);
+                                finish();
 
                             } else {
-                                Message m = handler.obtainMessage();
-                                m.what = R.id.decode_failed;
-                                m.obj = "Scan failed!";
-                                handler.sendMessage(m);
+//                                Message m = handler.obtainMessage();
+//                                m.what = R.id.decode_failed;
+//                                m.obj = "Scan failed!";
+//                                handler.sendMessage(m);
+//                                MyLog.d("Scan failed");
+                                Looper.prepare();
+                                Toast.makeText(getApplicationContext(), "图片格式有误", Toast.LENGTH_SHORT).show();
+                                Looper.loop();
                             }
                         }
                     }).start();
@@ -186,32 +203,25 @@ public class CaptureActivity extends AppCompatActivity implements Callback {
      * @param path
      * @return
      */
-    public Result scanningImage(String path) {
-        if(TextUtils.isEmpty(path)){
+    public Result scanningImage(Uri path) {
+        if (path == null || path.equals("")) {
             return null;
         }
-        Hashtable<DecodeHintType, String> hints = new Hashtable<>();
-        hints.put(DecodeHintType.CHARACTER_SET, "UTF8"); //设置二维码内容的编码
-
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true; // 先获取原大小
-        scanBitmap = BitmapFactory.decodeFile(path, options);
-        options.inJustDecodeBounds = false; // 获取新的大小
-        int sampleSize = (int) (options.outHeight / (float) 200);
-        if (sampleSize <= 0)
-            sampleSize = 1;
-        options.inSampleSize = sampleSize;
-        scanBitmap = BitmapFactory.decodeFile(path, options);
-        RGBLuminanceSource source = new RGBLuminanceSource(scanBitmap);
-        BinaryBitmap bitmap1 = new BinaryBitmap(new HybridBinarizer(source));
-        QRCodeReader reader = new QRCodeReader();
+        MyLog.d("Mark ScanningImage");
+        // DecodeHintType 和EncodeHintType
+        Hashtable<DecodeHintType, String> hints = new Hashtable<DecodeHintType, String>();
+        hints.put(DecodeHintType.CHARACTER_SET, "utf-8"); // 设置二维码内容的编码
         try {
+            MyLog.d("Mark Try");
+            Bitmap scanBitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(photo_path));
+
+            RGBLuminanceSource source = new RGBLuminanceSource(scanBitmap);
+            BinaryBitmap bitmap1 = new BinaryBitmap(new HybridBinarizer(source));
+            QRCodeReader reader = new QRCodeReader();
+            System.out.println("Classroom " + bitmap1);
             return reader.decode(bitmap1, hints);
-        } catch (NotFoundException e) {
-            e.printStackTrace();
-        } catch (ChecksumException e) {
-            e.printStackTrace();
-        } catch (FormatException e) {
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
