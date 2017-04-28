@@ -1,23 +1,23 @@
 [
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_btn_colored_material.xml"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_btn_colored_material.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/notification_tile_bg.xml"
     },
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/photo_drawable_btn.xml",
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable/photo_drawable_btn.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
@@ -162,6 +162,10 @@
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/xadsdk_ad_loading_anim.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable/xadsdk_ad_loading_anim.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable/loading_data_anim.xml",

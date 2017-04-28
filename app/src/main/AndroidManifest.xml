@@ -79,6 +79,9 @@
             android:windowSoftInputMode="stateAlwaysHidden"
             android:theme="@style/NoToolbarFullscreen"/>
 
+        <!-- AdBrowserActivity -->
+        <activity android:name=".ui.AdBrowserActivity"/>
+
 
     </application>
 

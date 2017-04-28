@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -116,6 +117,17 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
             //创建我们的Adapter
             mAdapter = new CourseAdapter(mContext, mRecommandData.data.list);
             mListView.setAdapter(mAdapter);
+
+            mListView.setOnScrollListener(new AbsListView.OnScrollListener() {
+                @Override
+                public void onScrollStateChanged(AbsListView view, int scrollState) {
+                }
+
+                @Override
+                public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+                    mAdapter.updateAdInScrollView();
+                }
+            });
 
         } else {
             showErrorView();

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:2:1-86:12
+ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:2:1-89:12
 	package
 		ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml
@@ -58,7 +58,7 @@ ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/sr
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:16:19-67
 application
-ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:20:5-83:19
+ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:20:5-86:19
 MERGED from [com.android.support:design:25.3.1] /home/jugyang/.android/build-cache/89297afc0fac4a6251a0e8ed8a0adab02194c6c3/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jugyang/.android/build-cache/07d22b0789d2098bbb8e12e3964863301305a1bd/output/AndroidManifest.xml:26:5-20
@@ -161,6 +161,10 @@ ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/sr
 		ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:80:13-55
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:76:19-65
+activity#com.example.jugyang.classroom.ui.AdBrowserActivity
+ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:83:9-57
+	android:name
+		ADDED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml:83:19-55
 uses-sdk
 INJECTED from /home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [io.realm:realm-android-library:2.1.1] /home/jugyang/.android/build-cache/2f7bdb38ec78bbef87ce78996043a153b9ffb0b7/output/AndroidManifest.xml:5:5-7:41

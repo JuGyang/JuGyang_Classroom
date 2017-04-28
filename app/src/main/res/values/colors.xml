@@ -28,5 +28,7 @@
     <color name="laser_color">#0F0</color>
     <color name="corner_color">#00FF00</color>
 
+    <color name="xadsdk_frame_bg">#e5e5e5</color>
+
 
 </resources>

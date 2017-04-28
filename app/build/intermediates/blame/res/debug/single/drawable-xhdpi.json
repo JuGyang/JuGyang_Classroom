@@ -16,6 +16,10 @@
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable-xhdpi/flf.png"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable-xhdpi/trade_share.png",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable-xhdpi/trade_share.png"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon_follow.png",
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/drawable-xhdpi/icon_follow.png"
     },

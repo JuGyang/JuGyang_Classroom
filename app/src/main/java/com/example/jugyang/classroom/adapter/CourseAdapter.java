@@ -1,6 +1,7 @@
 package com.example.jugyang.classroom.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,9 +14,14 @@ import android.widget.TextView;
 
 import com.example.jugyang.classroom.ImagerLoader.ImageLoaderManager;
 import com.example.jugyang.classroom.R;
+import com.example.jugyang.classroom.core.AdContextInterface;
+import com.example.jugyang.classroom.core.video.VideoAdContext;
 import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
+import com.example.jugyang.classroom.ui.AdBrowserActivity;
 import com.example.jugyang.classroom.util.Util;
+import com.example.jugyang.classroom.utils.MyLog;
 import com.example.jugyang.classroom.utils.Utils;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
@@ -43,6 +49,8 @@ public class    CourseAdapter extends BaseAdapter {
     private Context mContext;
     private ViewHolder mViewHolder;
     private LayoutInflater mInflate;
+    private VideoAdContext mAdsdkContext;
+
 
     private ArrayList<RecommandBodyValue> mData;
 
@@ -99,11 +107,40 @@ public class    CourseAdapter extends BaseAdapter {
         //1.获取数据的type类型
         int type = getItemViewType(position);
         final RecommandBodyValue value = (RecommandBodyValue) getItem(position);
-        //System.out.println("fuck:" + type);
-
         //为空表明当前没有可使用的缓存View
         if (convertView == null) {
             switch (type) {
+                case VIDEO_TYPE:
+                    System.out.println("Classroom Type: " + type);
+                    mViewHolder = new ViewHolder();
+                    convertView = mInflate.inflate(R.layout.item_product_video_type_layout, parent, false);
+                    mViewHolder.mVideoContentLayout = (RelativeLayout)
+                            convertView.findViewById(R.id.video_ad_layout);
+                    mViewHolder.mLogoView = (CircleImageView) convertView.findViewById(R.id.item_logo_view);
+                    mViewHolder.mTitleView = (TextView) convertView.findViewById(R.id.item_title_view);
+                    mViewHolder.mInfoView = (TextView) convertView.findViewById(R.id.item_info_view);
+                    mViewHolder.mFooterView = (TextView) convertView.findViewById(R.id.item_footer_view);
+                    //mViewHolder.mShareView = (ImageView) convertView.findViewById(R.id.item_share_view);
+                    //为对应布局创建播放器
+                    mAdsdkContext = new VideoAdContext(mViewHolder.mVideoContentLayout,
+                            new Gson().toJson(value), null);
+                    mAdsdkContext.setAdResultListener(new AdContextInterface() {
+                        @Override
+                        public void onAdSuccess() {
+                        }
+
+                        @Override
+                        public void onAdFailed() {
+                        }
+
+                        @Override
+                        public void onClickVideo(String url) {
+                            Intent intent = new Intent(mContext, AdBrowserActivity.class);
+                            intent.putExtra(AdBrowserActivity.KEY_URL, url);
+                            mContext.startActivity(intent);
+                        }
+                    });
+                    break;
                 case CARD_SIGNAL_PIC:
                     //单图模式
                     mViewHolder = new ViewHolder();
@@ -154,8 +191,29 @@ public class    CourseAdapter extends BaseAdapter {
         }
         //开始绑定数据
         switch (type) {
+            case VIDEO_TYPE:
+                mImageLoader.displayImage(mViewHolder.mLogoView, value.logo);
+                mViewHolder.mTitleView.setText(value.title);
+                mViewHolder.mInfoView.setText(value.info.concat("days ago"));
+                mViewHolder.mFooterView.setText(value.text);
+//                mViewHolder.mShareView.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        ShareDialog dialog = new ShareDialog(mContext, false);
+//                        dialog.setShareType(Platform.SHARE_VIDEO);
+//                        dialog.setShareTitle(value.title);
+//                        dialog.setShareTitleUrl(value.site);
+//                        dialog.setShareText(value.text);
+//                        dialog.setShareSite(value.title);
+//                        dialog.setShareTitle(value.site);
+//                        dialog.setUrl(value.resource);
+//                        dialog.show();
+//                    }
+//                });
+                break;
             case CARD_SIGNAL_PIC:
                 //单图模式
+                System.out.println("Classroom Type: " + type);
                 mViewHolder.mTitleView.setText(value.title);
                 mViewHolder.mInfoView.setText(value.info.concat("days ago"));
                 mViewHolder.mFooterView.setText(value.text);
@@ -189,6 +247,13 @@ public class    CourseAdapter extends BaseAdapter {
 
         }
         return convertView;
+    }
+
+    //自动播放方法
+    public void updateAdInScrollView() {
+        if (mAdsdkContext != null) {
+            mAdsdkContext.updateAdInScrollView();
+        }
     }
 
     /**

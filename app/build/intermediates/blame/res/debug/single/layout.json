@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/xadsdk_dialog_video_layout.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/xadsdk_dialog_video_layout.xml"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/layout/abc_action_mode_bar.xml"
     },
@@ -44,6 +48,10 @@
         "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/app_bar_main.xml"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/item_product_video_type_layout.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/item_product_video_type_layout.xml"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/layout/abc_activity_chooser_view.xml"
     },
@@ -70,6 +78,10 @@
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/home/jugyang/.android/build-cache/e4f88f6cd08ec05bb8152b1703fe9c20e47f2e93/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/xadsdk_video_player.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/src/main/res/layout/xadsdk_video_player.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",

@@ -218,6 +218,7 @@
     <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
     <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
     <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="xadsdk_frame_bg">#e5e5e5</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
@@ -855,7 +856,7 @@
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -2374,6 +2375,10 @@
         <item name="passwordToggleDrawable">@drawable/design_password_eye</item>
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
+    </style>
+    <style name="dialog_full_screen">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
     <style name="pop_anim_style">
         <item name="android:windowEnterAnimation">@anim/pop_in</item>

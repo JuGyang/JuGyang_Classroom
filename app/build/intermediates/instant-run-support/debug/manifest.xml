@@ -88,6 +88,9 @@
             android:theme="@style/NoToolbarFullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
+        <!-- AdBrowserActivity -->
+        <activity android:name="com.example.jugyang.classroom.ui.AdBrowserActivity" />
+
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
             android:authorities="com.example.jugyang.classroom.com.android.tools.fd.runtime.InstantRunContentProvider"

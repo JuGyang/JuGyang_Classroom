@@ -87,6 +87,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/NoToolbarFullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- AdBrowserActivity -->
+        <activity android:name="com.example.jugyang.classroom.ui.AdBrowserActivity" />
     </application>
 
 </manifest>

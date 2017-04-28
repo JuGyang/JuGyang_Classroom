@@ -36,4 +36,9 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="dialog_full_screen">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
 </resources>
