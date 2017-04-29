@@ -1112,7 +1112,7 @@ int id navigation_header_container 0x7f0e00c1
 int id never 0x7f0e0050
 int id none 0x7f0e0023
 int id normal 0x7f0e0025
-int id notification_background 0x7f0e0105
+int id notification_background 0x7f0e0104
 int id notification_main_column 0x7f0e00ff
 int id notification_main_column_container 0x7f0e00fe
 int id packed 0x7f0e001e
@@ -1140,7 +1140,7 @@ int id recommand_layot_one 0x7f0e00cc
 int id restart_preview 0x7f0e0010
 int id return_scan_result 0x7f0e0011
 int id right 0x7f0e0041
-int id right_icon 0x7f0e0104
+int id right_icon 0x7f0e0105
 int id right_side 0x7f0e0100
 int id root_view 0x7f0e010e
 int id sale_num_view 0x7f0e00d9

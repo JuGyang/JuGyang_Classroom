@@ -3823,7 +3823,7 @@ containing a value of this type.
         public static final int never=0x7f0e0050;
         public static final int none=0x7f0e0023;
         public static final int normal=0x7f0e0025;
-        public static final int notification_background=0x7f0e0105;
+        public static final int notification_background=0x7f0e0104;
         public static final int notification_main_column=0x7f0e00ff;
         public static final int notification_main_column_container=0x7f0e00fe;
         public static final int packed=0x7f0e001e;
@@ -3851,7 +3851,7 @@ containing a value of this type.
         public static final int restart_preview=0x7f0e0010;
         public static final int return_scan_result=0x7f0e0011;
         public static final int right=0x7f0e0041;
-        public static final int right_icon=0x7f0e0104;
+        public static final int right_icon=0x7f0e0105;
         public static final int right_side=0x7f0e0100;
         public static final int root_view=0x7f0e010e;
         public static final int sale_num_view=0x7f0e00d9;

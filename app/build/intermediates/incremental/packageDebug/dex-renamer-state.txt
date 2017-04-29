@@ -1,4 +1,4 @@
-#Fri Apr 28 17:11:40 CST 2017
+#Sat Apr 29 19:25:45 CST 2017
 base.0=/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8f9cad4dd67aaac7424d759ccebf1e023ad7c2fa
 renamed.1=classes.dex
 renamed.0=classes2.dex

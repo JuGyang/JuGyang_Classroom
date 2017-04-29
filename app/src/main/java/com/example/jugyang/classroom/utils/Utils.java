@@ -29,10 +29,6 @@ import java.io.ByteArrayInputStream;
 
 public class Utils {
 
-    public static final String PROPNAME_SCREENLOCATION_LEFT = "propname_sreenlocation_left";
-    public static final String PROPNAME_SCREENLOCATION_TOP = "propname_sreenlocation_top";
-    public static final String PROPNAME_WIDTH = "propname_width";
-    public static final String PROPNAME_HEIGHT = "propname_height";
 
     public static int dip2px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
@@ -85,6 +81,7 @@ public class Utils {
             if ((rect.top > 0) && (rect.left < displayWidth)) {
                 double areaVisible = rect.width() * rect.height();
                 double areaTotal = pView.getWidth() * pView.getHeight();
+                System.out.println("Classroom GetvisiblePercent" +(areaVisible / areaTotal) * 100);
                 return (int) ((areaVisible / areaTotal) * 100);
             } else {
                 return -1;
@@ -157,6 +154,15 @@ public class Utils {
 
         return version;
     }
+
+    /**
+     * 获取view的屏幕属性
+     */
+    public static final String PROPNAME_SCREENLOCATION_LEFT = "propname_sreenlocation_left";
+    public static final String PROPNAME_SCREENLOCATION_TOP = "propname_sreenlocation_top";
+    public static final String PROPNAME_WIDTH = "propname_width";
+    public static final String PROPNAME_HEIGHT = "propname_height";
+
 
     public static Bundle getViewProperty(View view) {
         Bundle bundle = new Bundle();
