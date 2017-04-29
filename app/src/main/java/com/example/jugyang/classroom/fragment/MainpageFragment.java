@@ -125,6 +125,7 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
 
                 @Override
                 public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+                    MyLog.d("showSuccessView");
                     mAdapter.updateAdInScrollView();
                 }
             });

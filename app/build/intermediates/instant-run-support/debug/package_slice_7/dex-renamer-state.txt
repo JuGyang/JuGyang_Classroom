@@ -1,4 +1,4 @@
-#Fri Apr 28 17:24:38 CST 2017
+#Sat Apr 29 21:53:26 CST 2017
 base.0=/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7
 renamed.0=classes.dex
 file.0=/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex

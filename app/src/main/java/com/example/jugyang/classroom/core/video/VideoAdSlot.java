@@ -96,9 +96,13 @@ public class VideoAdSlot implements CustomVideoView.ADVideoPlayerListener {
         }
 
         //满足用户的视频播放设置条件
-        if (Utils.canAutoPlay(mContext, AdParameters.getCurrentSetting())) {
+        if (Utils.canAutoPlay(mContext, AdParameters.getCurrentSetting())
+                || isPlaying()) {
+            lastArea = currentArea;
             //真正去播放视频
             resumeVideo();
+            canPause = true;
+            mVideoView.setIsRealPause(false);
         } else {
             //不满足用户条件设置
             pauseVideo(false);
