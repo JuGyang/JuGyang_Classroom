@@ -54,6 +54,7 @@ public class PhotoPagerAdapter extends PagerAdapter {
         } else {
             photoView = new PhotoView(mContext);
         }
+        //使用图片加载组件为我们的PhotoView显示图片
         mLoader.displayImage(photoView, mData.get(position));
         container.addView(photoView, ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);

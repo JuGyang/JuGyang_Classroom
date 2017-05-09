@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "outputFile": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "/home/jugyang/.android/build-cache/29a33a1de216f5bee9bbef4628975ad8813095bc/output/res/values/values.xml",
+                    "file": "/home/jugyang/.android/build-cache/8685579bf940060d8b0a22320996e39df6635deb/output/res/values/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

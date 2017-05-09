@@ -1,7 +1,7 @@
-#Sat Apr 29 22:17:11 CST 2017
-base.0=/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8f9cad4dd67aaac7424d759ccebf1e023ad7c2fa
+#Mon May 08 18:19:17 CST 2017
+base.0=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_72cce76dc3cfcf90313156886fb319e3906b4d47
 renamed.1=classes.dex
 renamed.0=classes2.dex
-file.1=/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_63b4a56c7bff05dc0dce15a4acef93bec5b86d49/classes.dex
-base.1=/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_63b4a56c7bff05dc0dce15a4acef93bec5b86d49
-file.0=/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8f9cad4dd67aaac7424d759ccebf1e023ad7c2fa/classes.dex
+file.1=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_995228e4df87bf391d333abcfd98205d2e37a9f7/classes.dex
+base.1=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_995228e4df87bf391d333abcfd98205d2e37a9f7
+file.0=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_72cce76dc3cfcf90313156886fb319e3906b4d47/classes.dex

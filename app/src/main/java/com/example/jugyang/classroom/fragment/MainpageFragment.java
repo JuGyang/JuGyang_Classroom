@@ -1,6 +1,7 @@
 package com.example.jugyang.classroom.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -18,7 +19,9 @@ import com.example.jugyang.classroom.Network.http.RequestCenter;
 import com.example.jugyang.classroom.R;
 import com.example.jugyang.classroom.adapter.CourseAdapter;
 import com.example.jugyang.classroom.entity.recommand.BaseRecommandModel;
+import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
 import com.example.jugyang.classroom.okHttp.listener.DisposeDataListener;
+import com.example.jugyang.classroom.ui.PhotoViewActivity;
 import com.example.jugyang.classroom.utils.MyLog;
 import com.example.jugyang.classroom.view.home.HomeHeaderLayout;
 
@@ -72,7 +75,12 @@ public class MainpageFragment extends Fragment implements AdapterView.OnItemClic
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+        RecommandBodyValue value = (RecommandBodyValue) mAdapter.getItem(position - mListView.getHeaderViewsCount());
+        if (value.type != 0) {
+            Intent intent = new Intent(mContext, PhotoViewActivity.class);
+            intent.putStringArrayListExtra(PhotoViewActivity.PHOTO_LIST, value.url);
+            startActivity(intent);
+        }
     }
 
     /**

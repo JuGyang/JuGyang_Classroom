@@ -3,30 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/libs/photoview-library-1.2.2.jar"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/photoview-library-1.2.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b9000943d77c17d231bf3141a712828f2636c2ea">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/2/photoview-library-1.2.2_d9987873fadbd6c8aac4d96c95e985c4fbae55d0/classes.dex" />
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/photoview-library-1.2.2_9d9863db68df681965cc1466800d0ff0c17b24c7/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8f9cad4dd67aaac7424d759ccebf1e023ad7c2fa/classes.dex" />
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_72cce76dc3cfcf90313156886fb319e3906b4d47/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a8456e628c9ec389cc1d2966b7ebe6ac0218863a">
-        <dex dex="/home/jugyang/AndroidStudioProjects/Project/Classroom_Toy_v1.0/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_63b4a56c7bff05dc0dce15a4acef93bec5b86d49/classes.dex" />
+        sha1="50ae7b616c15c6a1a52d4439c68de70be9676688">
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_995228e4df87bf391d333abcfd98205d2e37a9f7/classes.dex" />
     </item>
 
 </items>

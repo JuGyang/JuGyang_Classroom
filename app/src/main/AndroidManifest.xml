@@ -82,6 +82,9 @@
         <!-- AdBrowserActivity -->
         <activity android:name=".ui.AdBrowserActivity"/>
 
+        <!-- PhotoViewActivity -->
+        <activity android:name=".ui.PhotoViewActivity"/>
+
 
     </application>
 

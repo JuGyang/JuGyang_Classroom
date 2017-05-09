@@ -91,6 +91,9 @@
         <!-- AdBrowserActivity -->
         <activity android:name="com.example.jugyang.classroom.ui.AdBrowserActivity" />
 
+        <!-- PhotoViewActivity -->
+        <activity android:name="com.example.jugyang.classroom.ui.PhotoViewActivity" />
+
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
             android:authorities="com.example.jugyang.classroom.com.android.tools.fd.runtime.InstantRunContentProvider"
