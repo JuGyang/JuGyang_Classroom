@@ -51,6 +51,7 @@ public class PhotoViewActivity extends BaseActivity implements View.OnClickListe
 
     private void initView() {
         mIndictorView = (TextView) findViewById(R.id.indictor_view);
+        mIndictorView.setText("1/" + mLenght);
         mShareView = (ImageView) findViewById(R.id.share_view);
         mShareView.setOnClickListener(this);
         mPager = (ViewPager) findViewById(R.id.photo_pager);

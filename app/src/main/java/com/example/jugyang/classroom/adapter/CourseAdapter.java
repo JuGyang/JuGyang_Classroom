@@ -18,6 +18,7 @@ import com.example.jugyang.classroom.core.AdContextInterface;
 import com.example.jugyang.classroom.core.video.VideoAdContext;
 import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
 import com.example.jugyang.classroom.ui.AdBrowserActivity;
+import com.example.jugyang.classroom.ui.PhotoViewActivity;
 import com.example.jugyang.classroom.util.Util;
 import com.example.jugyang.classroom.utils.MyLog;
 import com.example.jugyang.classroom.utils.Utils;
@@ -35,7 +36,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
  * Function:         function
  */
 
-public class    CourseAdapter extends BaseAdapter {
+public class CourseAdapter extends BaseAdapter {
 
     /**
      *  ListView不同类型的item标识
@@ -236,6 +237,14 @@ public class    CourseAdapter extends BaseAdapter {
                 mViewHolder.mPriceView.setText(value.price);
                 mViewHolder.mFromView.setText(value.from);
                 mViewHolder.mZanView.setText("like ".concat(value.zan));
+                mViewHolder.mProductLayout.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(mContext, PhotoViewActivity.class);
+                        intent.putStringArrayListExtra(PhotoViewActivity.PHOTO_LIST, value.url);
+                        mContext.startActivity(intent);
+                    }
+                });
                 //动态添加我们的ImageView到我们的水平ScrollView中
                 mViewHolder.mProductLayout.removeAllViews();//删除已有的图片
                 for (String url: value.url) {
