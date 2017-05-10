@@ -8,38 +8,38 @@ package cn.bmob.aar;
 
 public final class R {
     public static final class drawable {
-        public static final int bmob_update_btn_check_off_focused_holo_light = 0x7f020057;
-        public static final int bmob_update_btn_check_off_holo_light = 0x7f020058;
-        public static final int bmob_update_btn_check_off_pressed_holo_light = 0x7f020059;
-        public static final int bmob_update_btn_check_on_focused_holo_light = 0x7f02005a;
-        public static final int bmob_update_btn_check_on_holo_light = 0x7f02005b;
-        public static final int bmob_update_btn_check_on_pressed_holo_light = 0x7f02005c;
-        public static final int bmob_update_button_cancel_bg_focused = 0x7f02005d;
-        public static final int bmob_update_button_cancel_bg_normal = 0x7f02005e;
-        public static final int bmob_update_button_cancel_bg_selector = 0x7f02005f;
-        public static final int bmob_update_button_cancel_bg_tap = 0x7f020060;
-        public static final int bmob_update_button_check_selector = 0x7f020061;
-        public static final int bmob_update_button_close_bg_selector = 0x7f020062;
-        public static final int bmob_update_button_ok_bg_focused = 0x7f020063;
-        public static final int bmob_update_button_ok_bg_normal = 0x7f020064;
-        public static final int bmob_update_button_ok_bg_selector = 0x7f020065;
-        public static final int bmob_update_button_ok_bg_tap = 0x7f020066;
-        public static final int bmob_update_close_bg_normal = 0x7f020067;
-        public static final int bmob_update_close_bg_tap = 0x7f020068;
-        public static final int bmob_update_dialog_bg = 0x7f020069;
-        public static final int bmob_update_wifi_disable = 0x7f02006a;
+        public static final int bmob_update_btn_check_off_focused_holo_light = 0x7f020058;
+        public static final int bmob_update_btn_check_off_holo_light = 0x7f020059;
+        public static final int bmob_update_btn_check_off_pressed_holo_light = 0x7f02005a;
+        public static final int bmob_update_btn_check_on_focused_holo_light = 0x7f02005b;
+        public static final int bmob_update_btn_check_on_holo_light = 0x7f02005c;
+        public static final int bmob_update_btn_check_on_pressed_holo_light = 0x7f02005d;
+        public static final int bmob_update_button_cancel_bg_focused = 0x7f02005e;
+        public static final int bmob_update_button_cancel_bg_normal = 0x7f02005f;
+        public static final int bmob_update_button_cancel_bg_selector = 0x7f020060;
+        public static final int bmob_update_button_cancel_bg_tap = 0x7f020061;
+        public static final int bmob_update_button_check_selector = 0x7f020062;
+        public static final int bmob_update_button_close_bg_selector = 0x7f020063;
+        public static final int bmob_update_button_ok_bg_focused = 0x7f020064;
+        public static final int bmob_update_button_ok_bg_normal = 0x7f020065;
+        public static final int bmob_update_button_ok_bg_selector = 0x7f020066;
+        public static final int bmob_update_button_ok_bg_tap = 0x7f020067;
+        public static final int bmob_update_close_bg_normal = 0x7f020068;
+        public static final int bmob_update_close_bg_tap = 0x7f020069;
+        public static final int bmob_update_dialog_bg = 0x7f02006a;
+        public static final int bmob_update_wifi_disable = 0x7f02006b;
     }
     public static final class id {
-        public static final int bmob_update_content = 0x7f0e00b8;
-        public static final int bmob_update_id_cancel = 0x7f0e00bb;
-        public static final int bmob_update_id_check = 0x7f0e00b9;
-        public static final int bmob_update_id_close = 0x7f0e00b7;
-        public static final int bmob_update_id_ignore = 0x7f0e00bc;
-        public static final int bmob_update_id_ok = 0x7f0e00ba;
-        public static final int bmob_update_wifi_indicator = 0x7f0e00b6;
+        public static final int bmob_update_content = 0x7f0e00c2;
+        public static final int bmob_update_id_cancel = 0x7f0e00c5;
+        public static final int bmob_update_id_check = 0x7f0e00c3;
+        public static final int bmob_update_id_close = 0x7f0e00c1;
+        public static final int bmob_update_id_ignore = 0x7f0e00c6;
+        public static final int bmob_update_id_ok = 0x7f0e00c4;
+        public static final int bmob_update_wifi_indicator = 0x7f0e00c0;
     }
     public static final class layout {
-        public static final int bmob_update_dialog = 0x7f040026;
+        public static final int bmob_update_dialog = 0x7f040027;
     }
     public static final class string {
         public static final int BMAppUpdate = 0x7f080019;

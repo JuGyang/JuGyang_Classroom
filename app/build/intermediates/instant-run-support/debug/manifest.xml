@@ -94,6 +94,12 @@
         <!-- PhotoViewActivity -->
         <activity android:name="com.example.jugyang.classroom.ui.PhotoViewActivity" />
 
+        <!-- CoureseDetailActivity -->
+        <activity
+            android:name="com.example.jugyang.classroom.ui.CourseDetailActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoToolbarFullscreen" />
+
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
             android:authorities="com.example.jugyang.classroom.com.android.tools.fd.runtime.InstantRunContentProvider"

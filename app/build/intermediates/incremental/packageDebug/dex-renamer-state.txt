@@ -1,4 +1,4 @@
-#Mon May 08 18:19:17 CST 2017
+#Wed May 10 18:03:37 CST 2017
 base.0=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_72cce76dc3cfcf90313156886fb319e3906b4d47
 renamed.1=classes.dex
 renamed.0=classes2.dex

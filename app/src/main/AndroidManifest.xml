@@ -85,6 +85,11 @@
         <!-- PhotoViewActivity -->
         <activity android:name=".ui.PhotoViewActivity"/>
 
+        <!-- CoureseDetailActivity -->
+        <activity android:name=".ui.CourseDetailActivity"
+            android:theme="@style/NoToolbarFullscreen"
+            android:launchMode="singleTop"/>
+
 
     </application>
 

@@ -1,11 +1,19 @@
 [
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon_alipay.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_alipay.png"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/flj.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/flj.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/flg.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/flg.png"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon_jianpan.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_jianpan.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/flh.png",
@@ -16,8 +24,16 @@
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_gonggao.png"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon_position.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_position.png"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon_follow.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_follow.png"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/comment_back_normal.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/comment_back_normal.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/flk.png",

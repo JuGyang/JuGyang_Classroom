@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import com.example.jugyang.classroom.ImagerLoader.ImageLoaderManager;
 import com.example.jugyang.classroom.MainActivity;
+import com.example.jugyang.classroom.ui.CourseDetailActivity;
 
 import java.util.ArrayList;
 
@@ -47,7 +48,7 @@ public class PhotoPagerAdapter extends PagerAdapter {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(mContext,
-                            MainActivity.class);
+                            CourseDetailActivity.class);
                     mContext.startActivity(intent);
                 }
             });

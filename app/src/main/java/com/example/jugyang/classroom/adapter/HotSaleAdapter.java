@@ -1,6 +1,7 @@
 package com.example.jugyang.classroom.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.example.jugyang.classroom.ImagerLoader.ImageLoaderManager;
 import com.example.jugyang.classroom.R;
 import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
+import com.example.jugyang.classroom.ui.CourseDetailActivity;
 
 import java.util.ArrayList;
 
@@ -75,6 +77,15 @@ public class HotSaleAdapter extends PagerAdapter {
         imageViews[0] = (ImageView) rootView.findViewById(R.id.image_one);
         imageViews[1] = (ImageView) rootView.findViewById(R.id.image_two);
         imageViews[2] = (ImageView) rootView.findViewById(R.id.image_three);
+        rootView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, CourseDetailActivity.class);
+                intent.putExtra(CourseDetailActivity.COURSE_ID, value.adid);
+                mContext.startActivity(intent);
+            }
+        });
+
         /**
          * 绑定数据到View
          */

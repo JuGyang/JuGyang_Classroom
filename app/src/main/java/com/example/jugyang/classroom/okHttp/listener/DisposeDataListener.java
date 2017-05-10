@@ -10,7 +10,7 @@ package com.example.jugyang.classroom.okHttp.listener;
 public interface DisposeDataListener  {
 
     /**
-     * 请求成功回调时间处理
+     * 请求成功回调事件处理
      */
     public void onSuccess(Object reponseObj);
 

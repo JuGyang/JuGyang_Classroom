@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/photoview-library-1.2.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9000943d77c17d231bf3141a712828f2636c2ea">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/photoview-library-1.2.2_9d9863db68df681965cc1466800d0ff0c17b24c7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -25,8 +16,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="50ae7b616c15c6a1a52d4439c68de70be9676688">
+        sha1="eb29c0daa2a1e0237bbe09f51dc9aeacfd93ec8a">
         <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_995228e4df87bf391d333abcfd98205d2e37a9f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/photoview-library-1.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9000943d77c17d231bf3141a712828f2636c2ea">
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/photoview-library-1.2.2_9d9863db68df681965cc1466800d0ff0c17b24c7/classes.dex" />
     </item>
 
 </items>

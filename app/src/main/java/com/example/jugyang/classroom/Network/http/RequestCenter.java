@@ -1,5 +1,6 @@
 package com.example.jugyang.classroom.Network.http;
 
+import com.example.jugyang.classroom.entity.course.BaseCourseModel;
 import com.example.jugyang.classroom.entity.recommand.BaseRecommandModel;
 import com.example.jugyang.classroom.okHttp.CommonOkHttpClient;
 import com.example.jugyang.classroom.okHttp.listener.DisposeDataHandle;
@@ -30,6 +31,17 @@ public class RequestCenter {
 
         RequestCenter.postRequest(HttpConstants.HOME_RECOMMAND, null,
                 listener, BaseRecommandModel.class);
+    }
+
+    /**
+     * 请求课程详情
+     *
+     * @param listener
+     */
+    public static void requestCourseDetail(String courseId, DisposeDataListener listener) {
+        RequestParams params = new RequestParams();
+        params.put("courseId", courseId);
+        RequestCenter.postRequest(HttpConstants.COURSE_DETAIL, params, listener, BaseCourseModel.class);
     }
 
 }

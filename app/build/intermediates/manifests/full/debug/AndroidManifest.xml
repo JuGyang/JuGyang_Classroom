@@ -93,6 +93,12 @@
 
         <!-- PhotoViewActivity -->
         <activity android:name="com.example.jugyang.classroom.ui.PhotoViewActivity" />
+
+        <!-- CoureseDetailActivity -->
+        <activity
+            android:name="com.example.jugyang.classroom.ui.CourseDetailActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoToolbarFullscreen" />
     </application>
 
 </manifest>

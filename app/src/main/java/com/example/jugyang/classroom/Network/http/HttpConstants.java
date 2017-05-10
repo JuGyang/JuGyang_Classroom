@@ -20,4 +20,10 @@ public class HttpConstants {
      */
     public static String HOME_RECOMMAND = ROOT_URL + "/product/home_data.json";
 
+    /**
+     * 课程详情接口
+     */
+    public static String COURSE_DETAIL = ROOT_URL + "/product/course_detail.json";
+
+
 }
