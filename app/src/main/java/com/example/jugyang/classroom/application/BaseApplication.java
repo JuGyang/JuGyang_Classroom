@@ -16,6 +16,8 @@ import cn.bmob.v3.Bmob;
 
 public class BaseApplication extends Application{
 
+
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -24,4 +26,5 @@ public class BaseApplication extends Application{
         //Initialization Bmob
         Bmob.initialize(this, StaticClass.BMOB_APP_ID);
     }
+
 }

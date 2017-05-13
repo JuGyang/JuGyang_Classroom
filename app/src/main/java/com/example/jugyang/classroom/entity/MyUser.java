@@ -1,6 +1,9 @@
 package com.example.jugyang.classroom.entity;
 
+import java.net.URL;
+
 import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.datatype.BmobFile;
 
 /**
  * Project Name:     Classroom_Toy_v1.0
@@ -14,6 +17,8 @@ public class MyUser extends BmobUser {
     private int age;
     private boolean sex;
     private String desc;
+    private BmobFile image;
+    private String url;
 
     public int getAge() {
         return age;
@@ -37,5 +42,21 @@ public class MyUser extends BmobUser {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public void setImage(BmobFile image) {
+        this.image = image;
+    }
+
+    public BmobFile getImage() {
+        return image;
+    }
+
+    public void setImageUrl(String url) {
+        this.url = url;
+    }
+
+    public String getImageUrl() {
+        return url;
     }
 }

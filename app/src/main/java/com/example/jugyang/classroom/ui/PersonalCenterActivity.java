@@ -1,6 +1,9 @@
 package com.example.jugyang.classroom.ui;
 
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -20,6 +23,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.jugyang.classroom.ImagerLoader.ImageLoaderManager;
 import com.example.jugyang.classroom.R;
 import com.example.jugyang.classroom.entity.MyUser;
 import com.example.jugyang.classroom.utils.MyLog;
@@ -32,10 +36,22 @@ import org.w3c.dom.Text;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.List;
 
+import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.datatype.BmobFile;
 import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.UpdateListener;
+import cn.bmob.v3.listener.UploadFileListener;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
@@ -67,11 +83,19 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
 
     private File tempFile = null;
 
+    private Bitmap avatar_bitmap;
+
+
+    private String path; //本地头像地址
+
+    //BmobFile bmobFile;
+
+    MyUser user = new MyUser();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_center);
-
         initView();
     }
 
@@ -93,16 +117,22 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
         profile_image = (CircleImageView) findViewById(R.id.profile_image);
         profile_image.setOnClickListener(this);
 
+
+
         //拿到String
-        String imgString = ShareUtils.getString(this, "image_title", "");
-        if (!imgString.equals("")) {
-            //利用Base64将我们的string转换
-            byte [] byteArray = Base64.decode(imgString, Base64.DEFAULT);
-            ByteArrayInputStream byStream = new ByteArrayInputStream(byteArray);
-            //生产bitmap
-            Bitmap bitmap = BitmapFactory.decodeStream(byStream);
-            profile_image.setImageBitmap(bitmap);
-        }
+//        String imgString = ShareUtils.getString(this, "image_title", "");
+//        if (!imgString.equals("")) {
+//            //利用Base64将我们的string转换
+//            byte [] byteArray = Base64.decode(imgString, Base64.DEFAULT);
+//            ByteArrayInputStream byStream = new ByteArrayInputStream(byteArray);
+//            //生产bitmap
+//            Bitmap bitmap = BitmapFactory.decodeStream(byStream);
+//            profile_image.setImageBitmap(bitmap);
+//        }
+
+
+
+
         //初始化
         dialog = new CustomDialog(this, WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.WRAP_CONTENT,
@@ -126,6 +156,27 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
         et_sex.setText(userInfo.isSex() ? "Male" : "Female");
         et_age.setText(userInfo.getAge() + "");
         et_desc.setText(userInfo.getDesc());
+
+
+//        Bitmap avater_bitmap = returnBitmap(avater_url);
+//        profile_image.setImageBitmap(avater_bitmap);
+
+        //头像问题GG很烦
+        if (true) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    MyUser userInfo = BmobUser.getCurrentUser(MyUser.class);
+                    String avatar_url = userInfo.getImageUrl();
+                    avatar_bitmap = returnBitmap(avatar_url);
+                    MyLog.d("Avatar Url: " + avatar_url);
+                    //profile_image.setImageBitmap(avatar_bitmap);
+                }
+            }).start();
+
+            profile_image.setImageBitmap(avatar_bitmap);
+        }
+
     }
 
     //Control Visible or Gone
@@ -159,7 +210,7 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
 
                 if (!TextUtils.isEmpty(username) & !TextUtils.isEmpty(age) &!TextUtils.isEmpty(sex)) {
                     //Update properties
-                    MyUser user = new MyUser();
+                    //MyUser user = new MyUser();
                     user.setUsername(username);
                     user.setAge(Integer.parseInt(age));
                     if (sex.equals("Male")) {
@@ -231,7 +282,9 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
             switch (requestCode) {
                 //相册数据
                 case StaticClass.IMAGE_REQUEST_CODE:
-                    startPhotoZoom(data.getData());
+                    Uri uri = data.getData();
+                    path = getImagePath(uri, null);
+                    startPhotoZoom(uri);
                     break;
                 //相机数据
                 case StaticClass.CAMERA_REQUEST_CODE:
@@ -283,24 +336,106 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
     private void setImageToView(Intent data) {
         Bundle bundle = data.getExtras();
         if (bundle != null) {
+            final BmobFile bmobFile = new BmobFile(new File(path));
+            bmobFile.uploadblock(new UploadFileListener() {
+                @Override
+                public void done(BmobException e) {
+                    user.setImage(bmobFile);
+                    MyLog.e("Mark setImage");
+                    Toast.makeText(PersonalCenterActivity.this, "Update Image", Toast.LENGTH_SHORT).show();
+                    String url = bmobFile.getFileUrl();
+                    user.setImageUrl(url);
+                    BmobUser bmobUser = BmobUser.getCurrentUser();
+                    user.update(bmobUser.getObjectId(), new UpdateListener() {
+                        @Override
+                        public void done(BmobException e) {
+                            if (e == null) {
+                                Toast.makeText(PersonalCenterActivity.this, "Update User Avatar", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                }
+
+            });
             Bitmap bitmap = bundle.getParcelable("data");
             profile_image.setImageBitmap(bitmap);
         }
+//        Uri uri = data.getData();
+//        path = getImagePath(uri, null);
+//        final BmobFile bmobFile = new BmobFile(new File(path));
+//        bmobFile.uploadblock(new UploadFileListener() {
+//            @Override
+//            public void done(BmobException e) {
+//                user.setImage(bmobFile);
+//                user.update(user.getObjectId(), new UpdateListener() {
+//                    @Override
+//                    public void done(BmobException e) {
+//                        if (e == null) {
+//                            Toast.makeText(PersonalCenterActivity.this, "update", Toast.LENGTH_SHORT).show();
+//                        }
+//                    }
+//                });
+//            }
+//        });
+//        ContentResolver cr = this.getContentResolver();
+//        try {
+//            MyLog.e(path.toString());
+//            Bitmap bitmap = BitmapFactory.decodeStream(cr.openInputStream(uri));
+//            /**
+//             * 将Bitmap设定到ImageView
+//             */
+//            profile_image.setImageBitmap(bitmap);
+//
+//        } catch (FileNotFoundException e) {
+//            MyLog.e(e.getMessage());
+//            e.printStackTrace();
+//        }
     }
+
+    private String getImagePath(Uri uri, String seletion) {
+        String path = null;
+        Cursor cursor = getContentResolver().query(uri, null, seletion, null, null);
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                path = cursor.getString(cursor.getColumnIndex(MediaStore.Audio.Media.DATA));
+            }
+            cursor.close();
+
+        }
+        return path;
+    }
+
+
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //保存
-        BitmapDrawable drawable = (BitmapDrawable) profile_image.getDrawable();
-        Bitmap bitmap = drawable.getBitmap();
-        //将Bitmap压缩成字节数组输出流
-        ByteArrayOutputStream byStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 80, byStream);
-        //利用Base64将字节数组输出流转换成String
-        byte [] byteArray = byStream.toByteArray();
-        String imgString = new String(Base64.encodeToString(byteArray, Base64.DEFAULT));
-        //将String保存shareUtils
-        ShareUtils.putString(this, "image_title", imgString);
+//        //保存
+//        BitmapDrawable drawable = (BitmapDrawable) profile_image.getDrawable();
+//        Bitmap bitmap = drawable.getBitmap();
+//        //将Bitmap压缩成字节数组输出流
+//        ByteArrayOutputStream byStream = new ByteArrayOutputStream();
+//        bitmap.compress(Bitmap.CompressFormat.PNG, 80, byStream);
+//        //利用Base64将字节数组输出流转换成String
+//        byte [] byteArray = byStream.toByteArray();
+//        String imgString = new String(Base64.encodeToString(byteArray, Base64.DEFAULT));
+//        //将String保存shareUtils
+//        ShareUtils.putString(this, "image_title", imgString);
+    }
+
+    public Bitmap returnBitmap(String urlpath) {
+        Bitmap map = null;
+        try {
+            URL url = new URL(urlpath);
+            URLConnection conn = url.openConnection();
+            conn.connect();
+            InputStream in;
+            in = conn.getInputStream();
+            map = BitmapFactory.decodeStream(in);
+            // TODO Auto-generated catch block
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return map;
     }
 }

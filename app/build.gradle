@@ -51,5 +51,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile files('libs/photoview-library-1.2.2.jar')
     compile 'com.google.zxing:core:3.2.1'
-
+    compile files('libs/Bmob_Push_V1.0.0beta_20160627.jar')
 }

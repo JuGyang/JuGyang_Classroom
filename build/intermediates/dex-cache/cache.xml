@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="eb29c0daa2a1e0237bbe09f51dc9aeacfd93ec8a">
+        sha1="a3c48af1b4dddc867f0e5c46273cb87736df28c5">
         <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_995228e4df87bf391d333abcfd98205d2e37a9f7/classes.dex" />
     </item>
     <item
@@ -27,6 +27,15 @@
         revision="25.0.2"
         sha1="b9000943d77c17d231bf3141a712828f2636c2ea">
         <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/photoview-library-1.2.2_9d9863db68df681965cc1466800d0ff0c17b24c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/Bmob_Push_V1.0.0beta_20160627.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0e1d7fc0e38d0852f61afea9a6da92abb948bf21">
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/Bmob_Push_V1.0.0beta_20160627_97cfe1ce1cc64c5d7629cf5746d0f9eadb0cb11b/classes.dex" />
     </item>
 
 </items>

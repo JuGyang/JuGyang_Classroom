@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 10 18:03:38 CST 2017
+#Fri May 12 17:36:34 CST 2017
 20.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 143.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 439.set=ANDROID_RESOURCE
@@ -83,7 +83,7 @@
 120.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
 153.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/layout/app_bar_main.xml
 279.set=NATIVE_RESOURCE
-324.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
+324.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
 202.set=ANDROID_RESOURCE
 37.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 157.set=ANDROID_RESOURCE
@@ -632,7 +632,7 @@
 346.set=ANDROID_RESOURCE
 152.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_shrink_fade_out_from_bottom.xml
 269.set=ANDROID_RESOURCE
-323.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+323.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
 36.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 147.set=ANDROID_RESOURCE
 62.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/mipmap-mdpi-v4/ic_launcher.png
@@ -723,7 +723,7 @@
 279.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 296.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_action_tombstone.xml
 126.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_checkbox.xml
-159.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png
+159.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
 262.set=ANDROID_RESOURCE
 160.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 69.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/layout/item_comment_layout.xml
@@ -1277,7 +1277,7 @@ count=446
 295.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/add_pic.png
 278.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 125.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_disable_only_material_light.xml
-158.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+158.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png
 329.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/design_ic_visibility_off.png
 252.set=ANDROID_RESOURCE
 68.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_personal_center.xml

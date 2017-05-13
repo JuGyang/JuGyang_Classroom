@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 10 18:03:26 CST 2017
+#Fri May 12 17:36:27 CST 2017
 20.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 143.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 340.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/comment_back_normal.png
@@ -401,7 +401,7 @@
 227.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/page_loading_06.png
 75.set=ANDROID_RESOURCE
 326.set=ANDROID_RESOURCE
-150.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+150.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png
 249.set=ANDROID_RESOURCE
 321.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_splash.xml
 34.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
@@ -673,7 +673,7 @@
 103.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/color/design_tint_password_toggle.xml
 289.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 136.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_register.xml
-307.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+307.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
 46.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_bar_view_list_nav_layout.xml
 169.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/anim/pop_in.xml
 362.set=ANDROID_RESOURCE
@@ -704,7 +704,7 @@
 424.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/xadsdk_ad_play.png
 37.set=ANDROID_RESOURCE
 286.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/point_off.png
-149.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png
+149.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
 150.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 321.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 183.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
@@ -1202,7 +1202,7 @@ count=426
 102.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/avd_show_password_2.xml
 288.base=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_
 135.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/xadsdk_loading_v2_00021.png
-306.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
+306.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
 45.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_slide_out_top.xml
 168.file=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/resources-debug.ap_/res/color/abc_hint_foreground_material_dark.xml
 352.set=ANDROID_RESOURCE

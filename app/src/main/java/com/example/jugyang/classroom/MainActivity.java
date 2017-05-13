@@ -36,6 +36,10 @@ import com.tencent.bugly.crashreport.CrashReport;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.bmob.push.BmobPush;
+import cn.bmob.v3.Bmob;
+import cn.bmob.v3.BmobInstallation;
+
 import static com.example.jugyang.classroom.R.id.fab;
 
 public class MainActivity extends AppCompatActivity
@@ -83,6 +87,12 @@ public class MainActivity extends AppCompatActivity
 //            }
 //        });
         navigationView.setNavigationItemSelectedListener(this);
+
+        Bmob.initialize(this, "d2b96fb5e47f9af7dbf3b26b5d4964cb");
+        // 使用推送服务时的初始化操作
+        BmobInstallation.getCurrentInstallation().save();
+        // 启动推送服务
+        BmobPush.startWork(this);
 
 
         /**
