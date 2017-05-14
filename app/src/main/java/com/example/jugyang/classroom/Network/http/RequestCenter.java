@@ -5,6 +5,7 @@ import com.example.jugyang.classroom.entity.recommand.BaseRecommandModel;
 import com.example.jugyang.classroom.okHttp.CommonOkHttpClient;
 import com.example.jugyang.classroom.okHttp.listener.DisposeDataHandle;
 import com.example.jugyang.classroom.okHttp.listener.DisposeDataListener;
+import com.example.jugyang.classroom.okHttp.listener.DisposeDownloadListener;
 import com.example.jugyang.classroom.okHttp.request.CommonRequest;
 import com.example.jugyang.classroom.okHttp.request.RequestParams;
 
@@ -43,5 +44,11 @@ public class RequestCenter {
         params.put("courseId", courseId);
         RequestCenter.postRequest(HttpConstants.COURSE_DETAIL, params, listener, BaseCourseModel.class);
     }
+
+    public static void downloadFile(String url, String path, DisposeDownloadListener listener) {
+        CommonOkHttpClient.downloadFile(CommonRequest.createGetRequest(url, null),
+                new DisposeDataHandle(listener, path));
+    }
+
 
 }

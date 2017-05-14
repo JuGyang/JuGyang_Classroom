@@ -1,5 +1,6 @@
 package com.example.jugyang.classroom.okHttp;
 
+import com.example.jugyang.classroom.okHttp.Response.CommonFileCallback;
 import com.example.jugyang.classroom.okHttp.Response.CommonJsonCallback;
 import com.example.jugyang.classroom.okHttp.https.HttpsUtils;
 import com.example.jugyang.classroom.okHttp.listener.DisposeDataHandle;
@@ -81,6 +82,12 @@ public class CommonOkHttpClient {
     public static Call post (Request request, DisposeDataHandle handle) {
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(new CommonJsonCallback(handle));
+        return call;
+    }
+
+    public static Call downloadFile(Request request, DisposeDataHandle handle) {
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(new CommonFileCallback(handle));
         return call;
     }
 }

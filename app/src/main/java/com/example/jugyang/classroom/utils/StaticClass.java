@@ -1,5 +1,7 @@
 package com.example.jugyang.classroom.utils;
 
+import android.os.Environment;
+
 /**
  * Project Name:     Classroom_Toy_v1.0
  * Package Name:     com.example.jugyang.classroom.utils
@@ -49,5 +51,10 @@ public class StaticClass {
     //素材类型
     public static final String MATERIAL_IMAGE = "image";
     public static final String MATERIAL_HTML = "html";
+
+    //整个应用文件下载保存路径
+    public static String APP_PHOTO_DIR = Environment.
+            getExternalStorageDirectory().getAbsolutePath().
+            concat("/classroom_online/download/");
 }
 

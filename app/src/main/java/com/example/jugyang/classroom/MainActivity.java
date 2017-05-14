@@ -1,7 +1,9 @@
 package com.example.jugyang.classroom;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
@@ -26,6 +28,7 @@ import com.example.jugyang.classroom.fragment.ArticlesFragment;
 import com.example.jugyang.classroom.fragment.ClassesFragment;
 import com.example.jugyang.classroom.fragment.LiveFragment;
 import com.example.jugyang.classroom.fragment.MainpageFragment;
+import com.example.jugyang.classroom.share.ShareDialog;
 import com.example.jugyang.classroom.ui.PersonalCenterActivity;
 import com.example.jugyang.classroom.ui.SettingActivity;
 import com.example.jugyang.classroom.utils.MyLog;
@@ -39,12 +42,14 @@ import java.util.List;
 import cn.bmob.push.BmobPush;
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobInstallation;
+import cn.sharesdk.framework.Platform;
 
 import static com.example.jugyang.classroom.R.id.fab;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
+    protected Activity mContext;
     //TabLayout
     private TabLayout mTabLayout;
     //ViewPager
@@ -152,11 +157,13 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_gallery) {
 
+
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
+            shareClassroomToFriend();
 
         } else if (id == R.id.nav_send) {
 
@@ -165,6 +172,18 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void shareClassroomToFriend() {
+        ShareDialog dialog = new ShareDialog(this, false);
+        dialog.setShareType(Platform.SHARE_IMAGE);
+        dialog.setShareTitle("JuGyang Site");
+        dialog.setShareTitleUrl("http://jugyang.com");
+        dialog.setShareText("JuGyang Site");
+        dialog.setShareSite("JuGyang Site");
+        dialog.setShareSiteUrl("http://jugyang.com");
+        dialog.setImagePhoto(Environment.getExternalStorageDirectory() + "/test2.jpg");
+        dialog.show();
     }
 
     private void initData() {

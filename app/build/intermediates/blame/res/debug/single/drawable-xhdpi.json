@@ -16,8 +16,16 @@
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_jianpan.png"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/comui_share_weixin_pengyou.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/comui_share_weixin_pengyou.png"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/flh.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/flh.png"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/comui_share_qqzone.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/comui_share_qqzone.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon_gonggao.png",
@@ -32,12 +40,24 @@
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_follow.png"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/comui_share_weixin.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/comui_share_weixin.png"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/comment_back_normal.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/comment_back_normal.png"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/bg_download.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/bg_download.png"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/flk.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/flk.png"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/comui_share_qq.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/comui_share_qq.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/trade_share.png",

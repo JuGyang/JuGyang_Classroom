@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:2:1-147:12
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:2:1-175:12
 	package
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml
@@ -70,7 +70,7 @@ ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/An
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:20:22-78
 application
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:24:5-144:19
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:24:5-172:19
 MERGED from [com.android.support:design:25.3.1] /home/jugyang/.android/build-cache/6b76b1861aafea7bec4c14b254b34b4675159fd1/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jugyang/.android/build-cache/87357df6a75f5f656c85c2e5443de057f34f5d7c/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jugyang/.android/build-cache/ddfeff7efb278039f54bf81ad73bdd11d7024281/output/AndroidManifest.xml:26:5-20
@@ -189,72 +189,114 @@ ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/An
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:94:13-55
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:93:19-58
-service#cn.bmob.push.lib.service.PushService
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:97:9-105:19
-	android:process
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:100:13-40
-	android:label
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:98:13-40
+activity#com.mob.tools.MobUIShell
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:98:9-114:20
+	android:screenOrientation
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:101:13-49
+	android:windowSoftInputMode
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:103:13-67
+	android:configChanges
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:100:13-74
+	android:theme
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:102:13-72
+	android:name
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:99:13-52
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:106:13-113:29
+data
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:107:17-60
+	android:scheme
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:107:23-57
+action#android.intent.action.VIEW
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:109:17-69
+	android:name
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:109:25-66
+category#android.intent.category.BROWSABLE
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:111:17-78
+	android:name
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:111:27-75
+category#android.intent.category.DEFAULT
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:112:17-76
+	android:name
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:112:27-73
+activity#com.example.jugyang.classroom.wxapi.WXEntryActivity
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:116:9-121:75
+	android:screenOrientation
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:120:13-49
 	android:exported
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:101:13-36
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:119:13-36
+	android:configChanges
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:118:13-74
+	android:theme
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:121:13-72
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:99:13-64
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:117:13-50
+service#cn.bmob.push.lib.service.PushService
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:125:9-133:19
+	android:process
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:128:13-40
+	android:label
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:126:13-40
+	android:exported
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:129:13-36
+	android:name
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:127:13-64
 intent-filter#cn.bmob.push.lib.service.PushService
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:102:13-104:29
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:130:13-132:29
 action#cn.bmob.push.lib.service.PushService
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:103:17-78
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:131:17-78
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:103:25-76
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:131:25-76
 service#cn.bmob.push.lib.service.PushNotifyService
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:108:9-111:19
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:136:9-139:19
 	android:process
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:110:13-40
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:138:13-40
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:109:13-70
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:137:13-70
 receiver#cn.bmob.push.PushReceiver
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:113:9-122:20
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:141:9-150:20
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:113:19-59
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:141:19-59
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:114:13-121:29
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:142:13-149:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:116:17-79
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:144:17-79
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:116:25-76
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:144:25-76
 action#android.intent.action.USER_PRESENT
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:118:17-77
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:146:17-77
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:118:25-74
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:146:25-74
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:120:17-79
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:148:17-79
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:120:25-76
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:148:25-76
 receiver#com.example.jugyang.classroom.bmobpush.MyPushMessageReceiver
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:125:9-129:20
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:153:9-157:20
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:125:19-65
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:153:19-65
 intent-filter#cn.bmob.push.action.MESSAGE
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:126:13-128:29
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:154:13-156:29
 action#cn.bmob.push.action.MESSAGE
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:127:17-69
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:155:17-69
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:127:25-67
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:155:25-67
 receiver#cn.bmob.push.PushNotifyReceiver
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:132:9-141:20
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:160:9-169:20
 	android:process
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:134:13-40
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:162:13-40
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:133:13-59
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:161:13-59
 intent-filter#cn.bmob.push.action.HEARTBEAT+cn.bmob.push.action.NOTIFY
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:135:13-140:29
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:163:13-168:29
 action#cn.bmob.push.action.HEARTBEAT
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:137:17-72
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:165:17-72
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:137:25-69
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:165:25-69
 action#cn.bmob.push.action.NOTIFY
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:139:17-69
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:167:17-69
 	android:name
-		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:139:25-66
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:167:25-66
 uses-sdk
 INJECTED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [io.realm:realm-android-library:2.1.1] /home/jugyang/.android/build-cache/3fffaae53b2cb8cc5674644a819d629e21aecf3d/output/AndroidManifest.xml:5:5-7:41
