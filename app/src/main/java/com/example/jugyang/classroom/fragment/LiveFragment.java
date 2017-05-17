@@ -88,7 +88,7 @@ public class LiveFragment extends Fragment implements AdapterView.OnItemClickLis
      */
     private void requestRecommandData() {
 
-        RequestCenter.requestRecommandData(new DisposeDataListener() {
+        RequestCenter.requestLiveFragmentRecommandData(new DisposeDataListener() {
             @Override
             public void onSuccess(Object reponseObj) {
                 //完成我们真正的功能逻辑

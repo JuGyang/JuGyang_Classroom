@@ -11,14 +11,29 @@ package com.example.jugyang.classroom.Network.http;
 
 public class HttpConstants {
     /**
-     * 方便切换服务器地址
+     * 服务器地址
      */
     private static final String ROOT_URL = "http://jugyang.com/api";
 
     /**
-     * 首页产品请求接口
+     * 首页请求接口
      */
-    public static String HOME_RECOMMAND = ROOT_URL + "/product/home_data.json";
+    public static String MAINPAGE_RECOMMAND = ROOT_URL + "/product/home_data.json";
+
+    /**
+     * 课程产品请求接口
+     */
+    public static String CLASSES_RECOMMAND = ROOT_URL + "/product/classes_data.json";
+
+    /**
+     * 直播页面请求接口
+     */
+    public static String LIVE_RECOMMAND = ROOT_URL + "/product/live_data.json";
+
+    /**
+     * 文章页面请求接口
+     */
+    public static String ARTICLES_RECOMMAND = ROOT_URL + "/product/articles_data.json";
 
     /**
      * 课程详情接口

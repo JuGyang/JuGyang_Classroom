@@ -180,6 +180,7 @@ public class CourseAdapter extends BaseAdapter {
                     mViewHolder.mViewPager.setPageMargin(Utils.dip2px(mContext, 12));
                     //为我们的VIewPager填充数据
                     ArrayList<RecommandBodyValue> recommandList = Util.handleData(value);
+                    //设置热卖Adapter
                     mViewHolder.mViewPager.setAdapter(new HotSaleAdapter(mContext, recommandList));
                     //一开始就让我们的ViewPager处于一个比较靠中间的Item项
                     mViewHolder.mViewPager.setCurrentItem(recommandList.size() * 100);

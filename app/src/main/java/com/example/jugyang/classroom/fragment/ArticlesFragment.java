@@ -87,7 +87,7 @@ public class ArticlesFragment extends Fragment implements AdapterView.OnItemClic
      */
     private void requestRecommandData() {
 
-        RequestCenter.requestRecommandData(new DisposeDataListener() {
+        RequestCenter.requestArticlesFragmentRecommandData(new DisposeDataListener() {
             @Override
             public void onSuccess(Object reponseObj) {
                 //完成我们真正的功能逻辑

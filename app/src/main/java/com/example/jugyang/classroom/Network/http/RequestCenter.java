@@ -24,17 +24,42 @@ public class RequestCenter {
     }
 
     /**
-     * 真正的发送我们首页请求
+     * 真正的发送首页请求MainpageFragment
      * @param listener
      */
 
-    public static void requestRecommandData(DisposeDataListener listener) {
+    public static void requestMainpageFragmentRecommandData(DisposeDataListener listener) {
 
-        RequestCenter.postRequest(HttpConstants.HOME_RECOMMAND, null,
+        RequestCenter.postRequest(HttpConstants.MAINPAGE_RECOMMAND, null,
                 listener, BaseRecommandModel.class);
     }
 
-    
+    /**
+     * 真正发送课程页面请求ClassesFragment
+     */
+    public static void requestClassesFragmentRecommandData(DisposeDataListener listener) {
+
+        RequestCenter.postRequest(HttpConstants.CLASSES_RECOMMAND, null,
+                listener, BaseRecommandModel.class);
+    }
+
+    /**
+     * 真正发送直播页面请求LiveFragment
+     */
+    public static void requestLiveFragmentRecommandData(DisposeDataListener listener) {
+
+        RequestCenter.postRequest(HttpConstants.LIVE_RECOMMAND, null,
+                listener, BaseRecommandModel.class);
+    }
+
+    /**
+     * 真正发送直播页面请求ArticlesFragment
+     */
+    public static void requestArticlesFragmentRecommandData(DisposeDataListener listener) {
+
+        RequestCenter.postRequest(HttpConstants.ARTICLES_RECOMMAND, null,
+                listener, BaseRecommandModel.class);
+    }
 
     /**
      * 请求课程详情
