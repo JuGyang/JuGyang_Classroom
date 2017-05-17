@@ -59,7 +59,7 @@ public class ArticlesFragment extends Fragment implements AdapterView.OnItemClic
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContext = getActivity();
-        mContentView = inflater.inflate(R.layout.fragment_mainpage, null);
+        mContentView = inflater.inflate(R.layout.fragment_articlespage, null);
         initView();
         return mContentView;
     }
@@ -119,7 +119,7 @@ public class ArticlesFragment extends Fragment implements AdapterView.OnItemClic
             mListView.setVisibility(View.VISIBLE);
 
             //为ListView添加列表头
-            mListView.addHeaderView(new HomeHeaderLayout(mContext, mRecommandData.data.head));
+            //mListView.addHeaderView(new HomeHeaderLayout(mContext, mRecommandData.data.head));
 
             //创建我们的Adapter
             mAdapter = new CourseAdapter(mContext, mRecommandData.data.list);

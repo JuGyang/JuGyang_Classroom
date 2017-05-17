@@ -56,6 +56,15 @@
         <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/classes_b0737c4f4f7a8709e3d9a9d3018a42980a19cdaf.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/pldroid-player-1.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="074119feeee86a632d2e5e744444037986c29ab8">
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/pldroid-player-1.5.1_8c47816881a46f4d5f37fd7e4847b94e023d51e3/classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="/home/jugyang/.android/build-cache/3fffaae53b2cb8cc5674644a819d629e21aecf3d/output/jars/classes.jar"
         jumboMode="false"

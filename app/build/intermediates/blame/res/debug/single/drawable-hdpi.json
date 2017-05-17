@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-hdpi/page_loading_02.png",
-        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-hdpi/page_loading_02.png"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-hdpi/xadsdk_loading_v2_00016.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-hdpi/xadsdk_loading_v2_00016.png"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-hdpi/page_loading_02.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-hdpi/page_loading_02.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-hdpi/page_loading_08.png",

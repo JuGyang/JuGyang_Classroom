@@ -34,6 +34,8 @@ public class RequestCenter {
                 listener, BaseRecommandModel.class);
     }
 
+    
+
     /**
      * 请求课程详情
      *

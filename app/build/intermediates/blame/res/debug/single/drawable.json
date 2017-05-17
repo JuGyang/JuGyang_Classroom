@@ -24,12 +24,12 @@
         "source": "/home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/res/drawable/bmob_update_button_cancel_bg_focused.xml"
     },
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/bmob_update_button_cancel_bg_selector.xml",
-        "source": "/home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/res/drawable/bmob_update_button_cancel_bg_selector.xml"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/bmob_update_button_ok_bg_focused.xml",
         "source": "/home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/res/drawable/bmob_update_button_ok_bg_focused.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/bmob_update_button_cancel_bg_selector.xml",
+        "source": "/home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/res/drawable/bmob_update_button_cancel_bg_selector.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
@@ -54,6 +54,10 @@
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
         "source": "/home/jugyang/.android/build-cache/6b76b1861aafea7bec4c14b254b34b4675159fd1/output/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/simple_player_control_selector_holo_dark.xml",
+        "source": "/home/jugyang/.android/build-cache/77c2a55f516ce8b1bac6499d6c0a75f07de36963/output/res/drawable/simple_player_control_selector_holo_dark.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/photo_drawable_btn.xml",
@@ -152,6 +156,10 @@
         "source": "/home/jugyang/.android/build-cache/6b76b1861aafea7bec4c14b254b34b4675159fd1/output/res/drawable/design_password_eye.xml"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/simple_player_progress_horizontal_holo_dark.xml",
+        "source": "/home/jugyang/.android/build-cache/77c2a55f516ce8b1bac6499d6c0a75f07de36963/output/res/drawable/simple_player_progress_horizontal_holo_dark.xml"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/home/jugyang/.android/build-cache/87357df6a75f5f656c85c2e5443de057f34f5d7c/output/res/drawable/abc_switch_thumb_material.xml"
     },
@@ -186,6 +194,14 @@
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
         "source": "/home/jugyang/.android/build-cache/87357df6a75f5f656c85c2e5443de057f34f5d7c/output/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/simple_player_center_bg.xml",
+        "source": "/home/jugyang/.android/build-cache/77c2a55f516ce8b1bac6499d6c0a75f07de36963/output/res/drawable/simple_player_center_bg.xml"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/simple_player_btn.xml",
+        "source": "/home/jugyang/.android/build-cache/77c2a55f516ce8b1bac6499d6c0a75f07de36963/output/res/drawable/simple_player_btn.xml"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable/bmob_update_button_cancel_bg_normal.xml",

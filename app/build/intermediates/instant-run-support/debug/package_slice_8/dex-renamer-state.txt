@@ -1,4 +1,4 @@
-#Sun May 14 19:06:00 CST 2017
+#Wed May 17 10:50:26 CST 2017
 base.0=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8
 renamed.0=classes.dex
 file.0=/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex

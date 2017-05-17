@@ -19,10 +19,12 @@ ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/An
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:5:22-72
 uses-permission#android.permission.INTERNET
 ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:13:5-79
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
@@ -43,6 +45,7 @@ ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/An
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:12:5-81
+MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:12:5-81
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.VIBRATE
@@ -85,6 +88,7 @@ MERGED from [com.android.support:support-compat:25.3.1] /home/jugyang/.android/b
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jugyang/.android/build-cache/0dc298afaf394e2d7e17ed24f0064fa218fb3fb1/output/AndroidManifest.xml:9:5-20
 MERGED from [cn.bmob.android:bmob-sdk:3.5.0] /home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/AndroidManifest.xml:11:5-14:19
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/jugyang/.android/build-cache/8717b4792fe3f0272cc086ab30276ac32cf677b5/output/AndroidManifest.xml:9:5-20
+MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:15:5-53
 	android:label
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:28:9-41
 	android:supportsRtl
@@ -318,6 +322,7 @@ MERGED from [com.tencent.bugly:crashreport:2.6.0] /home/jugyang/.android/build-c
 MERGED from [com.tencent.bugly:nativecrashreport:3.2.0] /home/jugyang/.android/build-cache/27e4c6173883822f8a594d7e709102a3df303b56/output/AndroidManifest.xml:5:5-7:41
 MERGED from [cn.bmob.android:bmob-sdk:3.5.0] /home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/AndroidManifest.xml:7:5-9:41
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/jugyang/.android/build-cache/8717b4792fe3f0272cc086ab30276ac32cf677b5/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] /home/jugyang/.android/build-cache/6b76b1861aafea7bec4c14b254b34b4675159fd1/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion

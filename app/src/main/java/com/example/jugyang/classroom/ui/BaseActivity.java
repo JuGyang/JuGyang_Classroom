@@ -19,7 +19,10 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //Show Back Icon
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //May produce NullPointerException
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 

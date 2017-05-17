@@ -29,7 +29,12 @@ import java.io.ByteArrayInputStream;
 
 public class Utils {
 
-
+    /**
+     * dp转换px算法
+     * @param context
+     * @param dpValue
+     * @return
+     */
     public static int dip2px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale);

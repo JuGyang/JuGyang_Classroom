@@ -162,20 +162,25 @@ public class PersonalCenterActivity extends BaseActivity implements View.OnClick
 //        profile_image.setImageBitmap(avater_bitmap);
 
         //头像问题GG很烦
-        if (true) {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    MyUser userInfo = BmobUser.getCurrentUser(MyUser.class);
-                    String avatar_url = userInfo.getImageUrl();
-                    avatar_bitmap = returnBitmap(avatar_url);
-                    MyLog.d("Avatar Url: " + avatar_url);
-                    //profile_image.setImageBitmap(avatar_bitmap);
-                }
-            }).start();
+//        if (true) {
+//            new Thread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    MyUser userInfo = BmobUser.getCurrentUser(MyUser.class);
+//                    String avatar_url = userInfo.getImageUrl();
+//                    avatar_bitmap = returnBitmap(avatar_url);
+//                    MyLog.d("Avatar Url: " + avatar_url);
+//                    //profile_image.setImageBitmap(avatar_bitmap);
+//                }
+//            }).start();
+//
+//            profile_image.setImageBitmap(avatar_bitmap);
+//        }
 
-            profile_image.setImageBitmap(avatar_bitmap);
-        }
+        String avatar_url = userInfo.getImageUrl();
+        ImageLoaderManager imageLoaderManager;
+        imageLoaderManager = ImageLoaderManager.getInstance(this);
+        imageLoaderManager.displayImage(profile_image, avatar_url);
 
     }
 

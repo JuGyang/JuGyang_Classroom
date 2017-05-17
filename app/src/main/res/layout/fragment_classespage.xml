@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <!-- Loading View -->
+    <ImageView
+        android:id="@+id/loading_view"
+        android:scaleType="center"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loading_data_anim"/>
+
+    <!-- Show Mainpage Listview -->
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alwaysDrawnWithCache="false"
+        android:divider="@color/color_cccccc"
+        android:dividerHeight="10dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -17,6 +17,7 @@ import com.example.jugyang.classroom.R;
 import com.example.jugyang.classroom.core.AdContextInterface;
 import com.example.jugyang.classroom.core.video.VideoAdContext;
 import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
+import com.example.jugyang.classroom.share.ShareDialog;
 import com.example.jugyang.classroom.ui.AdBrowserActivity;
 import com.example.jugyang.classroom.ui.PhotoViewActivity;
 import com.example.jugyang.classroom.util.Util;
@@ -26,6 +27,7 @@ import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
+import cn.sharesdk.framework.Platform;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
@@ -121,7 +123,7 @@ public class CourseAdapter extends BaseAdapter {
                     mViewHolder.mTitleView = (TextView) convertView.findViewById(R.id.item_title_view);
                     mViewHolder.mInfoView = (TextView) convertView.findViewById(R.id.item_info_view);
                     mViewHolder.mFooterView = (TextView) convertView.findViewById(R.id.item_footer_view);
-                    //mViewHolder.mShareView = (ImageView) convertView.findViewById(R.id.item_share_view);
+                    mViewHolder.mShareView = (ImageView) convertView.findViewById(R.id.item_share_view);
                     //为对应布局创建播放器
                     mAdsdkContext = new VideoAdContext(mViewHolder.mVideoContentLayout,
                             new Gson().toJson(value), null);
@@ -197,20 +199,20 @@ public class CourseAdapter extends BaseAdapter {
                 mViewHolder.mTitleView.setText(value.title);
                 mViewHolder.mInfoView.setText(value.info.concat("days ago"));
                 mViewHolder.mFooterView.setText(value.text);
-//                mViewHolder.mShareView.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        ShareDialog dialog = new ShareDialog(mContext, false);
-//                        dialog.setShareType(Platform.SHARE_VIDEO);
-//                        dialog.setShareTitle(value.title);
-//                        dialog.setShareTitleUrl(value.site);
-//                        dialog.setShareText(value.text);
-//                        dialog.setShareSite(value.title);
-//                        dialog.setShareTitle(value.site);
-//                        dialog.setUrl(value.resource);
-//                        dialog.show();
-//                    }
-//                });
+                mViewHolder.mShareView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        ShareDialog dialog = new ShareDialog(mContext, false);
+                        dialog.setShareType(Platform.SHARE_VIDEO);
+                        dialog.setShareTitle(value.title);
+                        dialog.setShareTitleUrl(value.site);
+                        dialog.setShareText(value.text);
+                        dialog.setShareSite(value.title);
+                        dialog.setShareTitle(value.site);
+                        dialog.setUrl(value.resource);
+                        dialog.show();
+                    }
+                });
                 break;
             case CARD_SIGNAL_PIC:
                 //单图模式

@@ -83,7 +83,7 @@ public class HomeHeaderLayout extends RelativeLayout {
         for (RecommandFooterValue value : mHeaderValue.footer) {
             mFootLayout.addView(createItem(value));
         }
-        mHotView.setText("-------->Latest News<---------");
+        mHotView.setText("-------->最新消息<---------");
     }
 
     private HomeBottomItem createItem(RecommandFooterValue value) {
