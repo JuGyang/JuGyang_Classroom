@@ -44,14 +44,14 @@ public class PhotoPagerAdapter extends PagerAdapter {
         if (mIsMatch) {
             photoView = new ImageView(mContext);
             photoView.setScaleType(ImageView.ScaleType.FIT_XY);
-            photoView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(mContext,
-                            CourseDetailActivity.class);
-                    mContext.startActivity(intent);
-                }
-            });
+//            photoView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(mContext,
+//                            CourseDetailActivity.class);
+//                    mContext.startActivity(intent);
+//                }
+//            });
         } else {
             photoView = new PhotoView(mContext);
         }

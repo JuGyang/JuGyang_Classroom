@@ -2,24 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/MobCommons-2016.0811.1207.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c48fe1d0f2c4cfc933ecd0260bc296a9d9542076">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/MobCommons-2016.0811.1207_b7c098fc1c2db90707ab67bfe0b95b445f823605.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-Wechat-Moments-2.7.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0e6793a8ad9eaa1aba89f54ae1d9adcb0349aedd">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/ShareSDK-Wechat-Moments-2.7.5_fa1ea2cc5fb624c9c58c7b52b39cb9c43a3c28e2.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-Wechat-Moments-2.7.5.jar"
         jumboMode="true"
@@ -47,13 +29,13 @@
         <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/MobTools-2016.0811.1207_314b727110a83214e72938683fe3bc7218226e1c/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-Core-2.7.5.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-Wechat-Core-2.7.5.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="994803d7df10c71c056768b24ccc02cbeb4fa4fa">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/ShareSDK-Core-2.7.5_7d68446d18657f06f0ebdf1ee4c7ff0149a3dd68.jar" />
+        sha1="ea2993a4a5867be988fab801b2433a475fc6a5ce">
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-Core-2.7.5_8da98abcadffb3c808636ec2010b8adc8fcf287e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -63,15 +45,6 @@
         revision="25.0.2"
         sha1="074119feeee86a632d2e5e744444037986c29ab8">
         <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/pldroid-player-1.5.1_8c47816881a46f4d5f37fd7e4847b94e023d51e3/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/pldroid-player-1.5.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="074119feeee86a632d2e5e744444037986c29ab8">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/pldroid-player-1.5.1_8c47816881a46f4d5f37fd7e4847b94e023d51e3.jar" />
     </item>
     <item
         is-multidex="true"
@@ -93,12 +66,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e34954f70f430b049af3c01e7b6466632d9b2a9f">
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_995228e4df87bf391d333abcfd98205d2e37a9f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-Core-2.7.5.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="994803d7df10c71c056768b24ccc02cbeb4fa4fa">
         <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Core-2.7.5_7d68446d18657f06f0ebdf1ee4c7ff0149a3dd68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/photoview-library-1.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9000943d77c17d231bf3141a712828f2636c2ea">
+        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/photoview-library-1.2.2_9d9863db68df681965cc1466800d0ff0c17b24c7/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -117,105 +108,6 @@
         revision="25.0.2"
         sha1="23c4be1c1ed5472cfd62440b80e8db73b99d2bcc">
         <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-QZone-2.7.5_f5e1779b05d72afc8bce3f517585a6e3f9557946/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/MobTools-2016.0811.1207.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="51c3fcf04e202f505695cf5d4b25b3225560ea96">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/MobTools-2016.0811.1207_314b727110a83214e72938683fe3bc7218226e1c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-QZone-2.7.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="23c4be1c1ed5472cfd62440b80e8db73b99d2bcc">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/ShareSDK-QZone-2.7.5_f5e1779b05d72afc8bce3f517585a6e3f9557946.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-Wechat-Core-2.7.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea2993a4a5867be988fab801b2433a475fc6a5ce">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-Core-2.7.5_8da98abcadffb3c808636ec2010b8adc8fcf287e/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="058ff5263b3a76cb92d9ebe9f71d519f3850eb45">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/classes_de56780c935668353e57dcac77e3b055173eec9f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-Wechat-Core-2.7.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea2993a4a5867be988fab801b2433a475fc6a5ce">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/ShareSDK-Wechat-Core-2.7.5_8da98abcadffb3c808636ec2010b8adc8fcf287e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/photoview-library-1.2.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9000943d77c17d231bf3141a712828f2636c2ea">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/photoview-library-1.2.2_9d9863db68df681965cc1466800d0ff0c17b24c7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-Wechat-2.7.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2adf9d0a9e07b1d00e09432ab372aed4aea308af">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/ShareSDK-Wechat-2.7.5_3b4ef8a34bf9856c31c9c2c208248d84ef152667.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="227e883cac2c6d287899697ac178361081daa100">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_995228e4df87bf391d333abcfd98205d2e37a9f7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/photoview-library-1.2.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9000943d77c17d231bf3141a712828f2636c2ea">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/transforms/dex/debug/folders/1000/2/photoview-library-1.2.2_9d9863db68df681965cc1466800d0ff0c17b24c7/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/ShareSDK-QQ-2.7.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="880ba492cbc7eaa275f364c758612244447e39fd">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/ShareSDK-QQ-2.7.5_a731233928e84678b1d10e68ffa3201494de472d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/libs/Bmob_Push_V1.0.0beta_20160627.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0e1d7fc0e38d0852f61afea9a6da92abb948bf21">
-        <dex dex="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/pre-dexed/debug/Bmob_Push_V1.0.0beta_20160627_97cfe1ce1cc64c5d7629cf5746d0f9eadb0cb11b.jar" />
     </item>
     <item
         is-multidex="true"
