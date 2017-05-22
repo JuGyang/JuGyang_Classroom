@@ -19,6 +19,7 @@ import com.example.jugyang.classroom.core.video.VideoAdContext;
 import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
 import com.example.jugyang.classroom.share.ShareDialog;
 import com.example.jugyang.classroom.ui.AdBrowserActivity;
+import com.example.jugyang.classroom.ui.CourseDetailActivity;
 import com.example.jugyang.classroom.ui.PhotoViewActivity;
 import com.example.jugyang.classroom.util.Util;
 import com.example.jugyang.classroom.utils.MyLog;
@@ -198,6 +199,15 @@ public class CourseAdapter extends BaseAdapter {
             case VIDEO_TYPE:
                 mImageLoader.displayImage(mViewHolder.mLogoView, value.logo);
                 mViewHolder.mTitleView.setText(value.title);
+                mViewHolder.mTitleView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //跳转到课程详情页面
+                        Intent intent = new Intent(mContext, CourseDetailActivity.class);
+                        intent.putExtra(CourseDetailActivity.COURSE_ID, value.class_id);
+                        mContext.startActivity(intent);
+                    }
+                });
                 mViewHolder.mInfoView.setText(value.info.concat("days ago"));
                 mViewHolder.mFooterView.setText(value.text);
                 mViewHolder.mShareView.setOnClickListener(new View.OnClickListener() {
@@ -219,6 +229,15 @@ public class CourseAdapter extends BaseAdapter {
                 //单图模式
                 System.out.println("Classroom Type: " + type);
                 mViewHolder.mTitleView.setText(value.title);
+                mViewHolder.mTitleView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //跳转到课程详情页面
+                        Intent intent = new Intent(mContext, CourseDetailActivity.class);
+                        intent.putExtra(CourseDetailActivity.COURSE_ID, value.class_id);
+                        mContext.startActivity(intent);
+                    }
+                });
                 mViewHolder.mInfoView.setText(value.info.concat("days ago"));
                 mViewHolder.mFooterView.setText(value.text);
                 mViewHolder.mPriceView.setText(value.price);
@@ -235,11 +254,20 @@ public class CourseAdapter extends BaseAdapter {
                 //为我们的LogoView加载异步图片
                 mImageLoader.displayImage(mViewHolder.mLogoView, value.logo);
                 mViewHolder.mTitleView.setText(value.title);
+                mViewHolder.mTitleView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //跳转到课程详情页面
+                        Intent intent = new Intent(mContext, CourseDetailActivity.class);
+                        intent.putExtra(CourseDetailActivity.COURSE_ID, value.class_id);
+                        mContext.startActivity(intent);
+                    }
+                });
                 mViewHolder.mInfoView.setText(value.info.concat("days ago"));
                 mViewHolder.mFooterView.setText(value.text);
                 mViewHolder.mPriceView.setText(value.price);
                 mViewHolder.mFromView.setText(value.from);
-                mViewHolder.mZanView.setText("like ".concat(value.zan));
+                mViewHolder.mZanView.setText("Like ".concat(value.zan));
                 mViewHolder.mProductLayout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

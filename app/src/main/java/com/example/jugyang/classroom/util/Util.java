@@ -21,6 +21,7 @@ public class Util {
     //为ViewPager结构化数据
     public static ArrayList<RecommandBodyValue> handleData(RecommandBodyValue value) {
         ArrayList<RecommandBodyValue> values = new ArrayList<>();
+        String[] class_ids = value.class_id.split("@");
         String[] titles = value.title.split("@");
         String[] infos = value.info.split("@");
         String[] prices = value.price.split("@");
@@ -29,6 +30,7 @@ public class Util {
         int start = 0;
         for (int i = 0; i < titles.length; i++) {
             RecommandBodyValue tempValue = new RecommandBodyValue();
+            tempValue.class_id = class_ids[i];
             tempValue.title = titles[i];
             tempValue.info = infos[i];
             tempValue.price = prices[i];

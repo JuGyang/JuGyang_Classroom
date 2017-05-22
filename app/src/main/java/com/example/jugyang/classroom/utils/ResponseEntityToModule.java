@@ -111,7 +111,7 @@ public class ResponseEntityToModule {
         if (fc instanceof ParameterizedType)// 锟角凤拷锟斤拷
         {
             ParameterizedType pt = (ParameterizedType) fc;
-            if (pt.getActualTypeArguments()[0] instanceof Class)// 锟斤拷指锟斤拷锟斤拷锟斤拷,锟斤拷锟斤拷"?"
+            if (pt.getActualTypeArguments()[0] instanceof Class)
             {
                 Class<?> clss = (Class<?>) pt.getActualTypeArguments()[0];
 

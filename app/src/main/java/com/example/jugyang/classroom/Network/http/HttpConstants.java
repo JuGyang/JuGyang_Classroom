@@ -18,7 +18,7 @@ public class HttpConstants {
     /**
      * 首页请求接口
      */
-    public static String MAINPAGE_RECOMMAND = ROOT_URL + "/product/home_data.json";
+    public static String MAINPAGE_RECOMMAND = ROOT_URL + "/product/home_data.php";
 
     /**
      * 课程产品请求接口
@@ -38,7 +38,7 @@ public class HttpConstants {
     /**
      * 课程详情接口
      */
-    public static String COURSE_DETAIL = ROOT_URL + "/product/course_detail.json";
+    public static String COURSE_DETAIL = ROOT_URL + "/product/classes_data.php?id=";
 
 
 }

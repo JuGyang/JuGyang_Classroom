@@ -28,7 +28,7 @@ import javax.crypto.BadPaddingException;
 
 public class CourseDetailActivity extends BaseActivity implements View.OnClickListener{
 
-    public static final String COURSE_ID = "coureseID";
+    public static final String COURSE_ID = "courseID";
 
     /**
      * UI

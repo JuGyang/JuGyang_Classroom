@@ -81,7 +81,7 @@ public class HotSaleAdapter extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, CourseDetailActivity.class);
-                intent.putExtra(CourseDetailActivity.COURSE_ID, value.adid);
+                intent.putExtra(CourseDetailActivity.COURSE_ID, value.class_id);
                 mContext.startActivity(intent);
             }
         });

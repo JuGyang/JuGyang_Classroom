@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 public class RecommandBodyValue extends BaseModel {
 
+    public String class_id; //对应课程id
     public int type;
     public String logo;
     public String title;

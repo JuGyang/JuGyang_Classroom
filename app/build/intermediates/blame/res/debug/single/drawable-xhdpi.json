@@ -36,12 +36,12 @@
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_position.png"
     },
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon_follow.png",
-        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_follow.png"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/comui_share_weixin.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/comui_share_weixin.png"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/icon_follow.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/drawable-xhdpi/icon_follow.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/drawable-xhdpi/comment_back_normal.png",
