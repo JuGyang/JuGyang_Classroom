@@ -3,11 +3,13 @@ package com.example.jugyang.classroom.ui;
 import android.content.Intent;
 import android.content.pm.ProviderInfo;
 import android.graphics.drawable.AnimationDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.jugyang.classroom.Network.http.RequestCenter;
 import com.example.jugyang.classroom.R;
@@ -18,6 +20,10 @@ import com.example.jugyang.classroom.entity.course.CourseHeaderValue;
 import com.example.jugyang.classroom.okHttp.listener.DisposeDataListener;
 import com.example.jugyang.classroom.view.course.CourseDetailFooterView;
 import com.example.jugyang.classroom.view.course.CourseDetailHeaderView;
+import com.gjiazhe.multichoicescirclebutton.MultiChoicesCircleButton;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.crypto.BadPaddingException;
 
@@ -123,6 +129,7 @@ public class CourseDetailActivity extends BaseActivity implements View.OnClickLi
         mListView.setVisibility(View.GONE);
         mLoadingView = (ImageView) findViewById(R.id.loading_view);
         mLoadingView.setVisibility(View.VISIBLE);
+
         /**
          * 加载我们的loading动画
          */
@@ -132,6 +139,56 @@ public class CourseDetailActivity extends BaseActivity implements View.OnClickLi
 
     private void initData() {
         mCourseID = getIntent().getStringExtra(COURSE_ID);
+
+
+
+        MultiChoicesCircleButton.Item item1 = new MultiChoicesCircleButton.Item("Like", getResources().getDrawable(R.drawable.ic_menu_camera), 30);
+
+        MultiChoicesCircleButton.Item item2 = new MultiChoicesCircleButton.Item("Message", getResources().getDrawable(R.drawable.ic_menu_camera), 90);
+
+        MultiChoicesCircleButton.Item item3 = new MultiChoicesCircleButton.Item("Tag", getResources().getDrawable(R.drawable.ic_menu_camera), 150);
+
+        List<MultiChoicesCircleButton.Item> buttonItems = new ArrayList<>();
+        buttonItems.add(item1);
+        buttonItems.add(item2);
+        buttonItems.add(item3);
+
+        MultiChoicesCircleButton multiChoicesCircleButton = (MultiChoicesCircleButton) findViewById(R.id.multiChoicesCircleButton);
+        multiChoicesCircleButton.setButtonItems(buttonItems);
+
+        multiChoicesCircleButton.setOnSelectedItemListener(new MultiChoicesCircleButton.OnSelectedItemListener() {
+            @Override
+            public void onSelected(MultiChoicesCircleButton.Item item, int index) {
+                // Do something
+                Toast.makeText(getApplication(), "点击" + index,Toast.LENGTH_SHORT).show();
+                int qq_num1 = mData.data.head.qq_num1;
+                int qq_num2 = mData.data.head.qq_num2;
+                int qq_num3 = mData.data.head.qq_num3;
+
+
+                String baseurl="mqqwpa://im/chat?chat_type=wpa&uin=";
+
+                String qq_url_1 = baseurl + qq_num1;
+                String qq_url_2 = baseurl + qq_num2;
+                String qq_url_3 = baseurl + qq_num3;
+                if (index == 0) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(qq_url_1)));
+                } else if (index == 1) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(qq_url_2)));
+                } else if (index == 2) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(qq_url_3)));
+                }
+
+
+            }
+        });
+
+        multiChoicesCircleButton.setOnHoverItemListener(new MultiChoicesCircleButton.OnHoverItemListener(){
+            @Override
+            public void onHovered(MultiChoicesCircleButton.Item item, int index) {
+                // Do something
+            }
+        });
     }
 
 

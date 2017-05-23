@@ -6,34 +6,34 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1495482043381"
+    timestamp="1495520640588"
     token="-3408738826729553871"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1471" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="851" />
+        duration="696" />
     <task
         name="verifier"
-        duration="34" />
+        duration="54" />
 
     <artifact
         location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
         location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
         type="SPLIT" />
     <artifact
         location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
         location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -45,16 +45,16 @@
         location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
         location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
     <artifact
         location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
     <artifact
         location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/outputs/apk/app-debug.apk"
@@ -62,19 +62,19 @@
 
     <build
         build-mode="FULL"
-        timestamp="1495482043381"
+        timestamp="1495520640588"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -86,16 +86,16 @@
             location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/outputs/apk/app-debug.apk"

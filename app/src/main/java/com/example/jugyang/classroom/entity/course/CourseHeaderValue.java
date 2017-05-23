@@ -22,4 +22,7 @@ public class CourseHeaderValue extends BaseModel {
     public String from;
     public String dayTime;
     public AdValue video;
+    public int qq_num1;
+    public int qq_num2;
+    public int qq_num3;
 }

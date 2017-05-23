@@ -1,8 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_white"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white">
 
     <RelativeLayout
         android:id="@+id/title_layout"
@@ -121,4 +121,15 @@
         android:dividerHeight="0.5dp"
         android:visibility="gone"
         />
+
+    <com.gjiazhe.multichoicescirclebutton.MultiChoicesCircleButton
+        android:id="@+id/multiChoicesCircleButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mccb_collapseRadius="40dp"
+        app:mccb_expandRadius="120dp"
+        app:mccb_icon="@android:drawable/ic_dialog_email"
+        app:mccb_text="Choose"
+        app:mccb_buttonColor="@color/colorAccent"
+        app:layout_behavior="@string/multi_choices_circle_button_behavior"/>
 </RelativeLayout>

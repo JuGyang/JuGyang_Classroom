@@ -454,6 +454,7 @@
             <flag name="collapseActionView" value="8"/>
         </attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/><attr format="reference" name="subMenuArrow"/></declare-styleable>
+    <declare-styleable name="MultiChoicesCircleButton"><attr format="reference" name="mccb_icon"/><attr format="boolean" name="mccb_enableParallax"/><attr format="dimension" name="mccb_collapseRadius"/><attr format="dimension" name="mccb_expandRadius"/><attr format="string" name="mccb_text"/><attr format="dimension" name="mccb_textSize"/><attr format="color" name="mccb_textColor"/><attr format="color" name="mccb_buttonColor"/><attr format="integer" name="mccb_duration"/><attr format="dimension" name="mccb_itemRadius"/><attr format="dimension" name="mccb_itemDistanceToCentre"/><attr format="color" name="mccb_itemBackgroundColor"/><attr format="boolean" name="mccb_showBackgroundShadow"/><attr format="boolean" name="mccb_backgroundShadowColor"/></declare-styleable>
     <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="headerLayout"/></declare-styleable>
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/><attr name="android:popupAnimationStyle"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
@@ -824,6 +825,7 @@
     <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the
         device.
     </string>
+    <string name="multi_choices_circle_button_behavior">com.gjiazhe.multichoicescirclebutton.MultiChoicesCircleButtonBehavior</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>

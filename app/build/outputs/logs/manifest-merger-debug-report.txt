@@ -74,6 +74,11 @@ ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/An
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:20:22-78
 application
 ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:24:5-172:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jugyang/.android/build-cache/0dc298afaf394e2d7e17ed24f0064fa218fb3fb1/output/AndroidManifest.xml:9:5-20
+MERGED from [cn.bmob.android:bmob-sdk:3.5.0] /home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/AndroidManifest.xml:11:5-14:19
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/jugyang/.android/build-cache/8717b4792fe3f0272cc086ab30276ac32cf677b5/output/AndroidManifest.xml:9:5-20
+MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:15:5-53
+MERGED from [com.gjiazhe:MultiChoicesCircleButton:1.0] /home/jugyang/.android/build-cache/a5854326b5682557f9cb1bc510f7ee88cf747211/output/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:design:25.3.1] /home/jugyang/.android/build-cache/6b76b1861aafea7bec4c14b254b34b4675159fd1/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jugyang/.android/build-cache/87357df6a75f5f656c85c2e5443de057f34f5d7c/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jugyang/.android/build-cache/ddfeff7efb278039f54bf81ad73bdd11d7024281/output/AndroidManifest.xml:26:5-20
@@ -85,10 +90,6 @@ MERGED from [com.android.support:support-media-compat:25.3.1] /home/jugyang/.and
 MERGED from [com.android.support:support-core-ui:25.3.1] /home/jugyang/.android/build-cache/3e880a02fcc5db5809ad2b4363c9b7674a636caa/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] /home/jugyang/.android/build-cache/24aa729fc8a8011592204c3a62335f0a86227304/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] /home/jugyang/.android/build-cache/b33b262c618b3150cfe1b2582e3d7fd62d3d8e75/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jugyang/.android/build-cache/0dc298afaf394e2d7e17ed24f0064fa218fb3fb1/output/AndroidManifest.xml:9:5-20
-MERGED from [cn.bmob.android:bmob-sdk:3.5.0] /home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/AndroidManifest.xml:11:5-14:19
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/jugyang/.android/build-cache/8717b4792fe3f0272cc086ab30276ac32cf677b5/output/AndroidManifest.xml:9:5-20
-MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:15:5-53
 	android:label
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:28:9-41
 	android:supportsRtl
@@ -305,6 +306,13 @@ uses-sdk
 INJECTED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [io.realm:realm-android-library:2.1.1] /home/jugyang/.android/build-cache/3fffaae53b2cb8cc5674644a819d629e21aecf3d/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] /home/jugyang/.android/build-cache/f07a2f4fe8b2301280abd2bd6129336f79786e71/output/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jugyang/.android/build-cache/0dc298afaf394e2d7e17ed24f0064fa218fb3fb1/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.bugly:crashreport:2.6.0] /home/jugyang/.android/build-cache/32ff635772779fbbc638b9b93adf084708bfcc1e/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.bugly:nativecrashreport:3.2.0] /home/jugyang/.android/build-cache/27e4c6173883822f8a594d7e709102a3df303b56/output/AndroidManifest.xml:5:5-7:41
+MERGED from [cn.bmob.android:bmob-sdk:3.5.0] /home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/AndroidManifest.xml:7:5-9:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/jugyang/.android/build-cache/8717b4792fe3f0272cc086ab30276ac32cf677b5/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.gjiazhe:MultiChoicesCircleButton:1.0] /home/jugyang/.android/build-cache/a5854326b5682557f9cb1bc510f7ee88cf747211/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:25.3.1] /home/jugyang/.android/build-cache/6b76b1861aafea7bec4c14b254b34b4675159fd1/output/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jugyang/.android/build-cache/87357df6a75f5f656c85c2e5443de057f34f5d7c/output/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jugyang/.android/build-cache/ddfeff7efb278039f54bf81ad73bdd11d7024281/output/AndroidManifest.xml:20:5-44
@@ -317,12 +325,6 @@ MERGED from [com.android.support:support-media-compat:25.3.1] /home/jugyang/.and
 MERGED from [com.android.support:support-core-ui:25.3.1] /home/jugyang/.android/build-cache/3e880a02fcc5db5809ad2b4363c9b7674a636caa/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] /home/jugyang/.android/build-cache/24aa729fc8a8011592204c3a62335f0a86227304/output/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] /home/jugyang/.android/build-cache/b33b262c618b3150cfe1b2582e3d7fd62d3d8e75/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jugyang/.android/build-cache/0dc298afaf394e2d7e17ed24f0064fa218fb3fb1/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.tencent.bugly:crashreport:2.6.0] /home/jugyang/.android/build-cache/32ff635772779fbbc638b9b93adf084708bfcc1e/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.tencent.bugly:nativecrashreport:3.2.0] /home/jugyang/.android/build-cache/27e4c6173883822f8a594d7e709102a3df303b56/output/AndroidManifest.xml:5:5-7:41
-MERGED from [cn.bmob.android:bmob-sdk:3.5.0] /home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/AndroidManifest.xml:7:5-9:41
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/jugyang/.android/build-cache/8717b4792fe3f0272cc086ab30276ac32cf677b5/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.qiniu.pili:pili-android-qos:0.8.20] /home/jugyang/.android/build-cache/0e667f969618642fa033f0d4d1e9937b683a9def/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] /home/jugyang/.android/build-cache/6b76b1861aafea7bec4c14b254b34b4675159fd1/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
