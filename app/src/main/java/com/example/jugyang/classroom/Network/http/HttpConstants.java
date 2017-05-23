@@ -28,7 +28,7 @@ public class HttpConstants {
     /**
      * 直播页面请求接口
      */
-    public static String LIVE_RECOMMAND = ROOT_URL + "/product/live_data.json";
+    public static String LIVE_RECOMMAND = ROOT_URL + "/product/live_data.php";
 
     /**
      * 文章页面请求接口

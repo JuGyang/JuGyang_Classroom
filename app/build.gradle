@@ -57,6 +57,7 @@ dependencies {
     //compile 'com.dou361.ijkplayer:jjdxm-ijkplayer:1.0.5'
     compile files('libs/pldroid-player-1.5.1.jar')
     compile 'com.qiniu.pili:pili-android-qos:0.8.+'
+    compile 'com.qiniu:happy-dns:0.2.+'
 
     compile 'com.gjiazhe:MultiChoicesCircleButton:1.0'
 }

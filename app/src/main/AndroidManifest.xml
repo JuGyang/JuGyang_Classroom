@@ -168,6 +168,9 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name=".ui.PLVideoTextureActivity"
+            android:theme="@style/AppThemeFullscreen"/>
+
 
     </application>
 

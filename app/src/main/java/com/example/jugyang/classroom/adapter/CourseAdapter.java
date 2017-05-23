@@ -20,11 +20,13 @@ import com.example.jugyang.classroom.entity.recommand.RecommandBodyValue;
 import com.example.jugyang.classroom.share.ShareDialog;
 import com.example.jugyang.classroom.ui.AdBrowserActivity;
 import com.example.jugyang.classroom.ui.CourseDetailActivity;
+import com.example.jugyang.classroom.ui.PLVideoTextureActivity;
 import com.example.jugyang.classroom.ui.PhotoViewActivity;
 import com.example.jugyang.classroom.util.Util;
 import com.example.jugyang.classroom.utils.MyLog;
 import com.example.jugyang.classroom.utils.Utils;
 import com.google.gson.Gson;
+import com.pili.pldroid.player.AVOptions;
 
 import java.util.ArrayList;
 
@@ -232,10 +234,19 @@ public class CourseAdapter extends BaseAdapter {
                 mViewHolder.mTitleView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        //跳转到课程详情页面
-                        Intent intent = new Intent(mContext, CourseDetailActivity.class);
-                        intent.putExtra(CourseDetailActivity.COURSE_ID, value.class_id);
-                        mContext.startActivity(intent);
+                        if (value.class_id != null) {
+                            //跳转到课程详情页面
+                            Intent intent = new Intent(mContext, CourseDetailActivity.class);
+                            intent.putExtra(CourseDetailActivity.COURSE_ID, value.class_id);
+                            mContext.startActivity(intent);
+                        } else {
+                            Intent intent = new Intent(mContext, PLVideoTextureActivity.class);
+                            intent.putExtra("videoPath", value.liveUrl); //播放地址
+                            intent.putExtra("mediaCodec", AVOptions.MEDIA_CODEC_SW_DECODE); //软解
+                            intent.putExtra("liveStreaming", 1); //直播
+                            mContext.startActivity(intent);
+                        }
+
                     }
                 });
                 mViewHolder.mInfoView.setText(value.info.concat("days ago"));

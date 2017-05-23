@@ -304,6 +304,10 @@
         "source": "/home/jugyang/.android/build-cache/87357df6a75f5f656c85c2e5443de057f34f5d7c/output/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/layout/activity_pl_video_texture.xml",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/layout/activity_pl_video_texture.xml"
+    },
+    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
         "source": "/home/jugyang/.android/build-cache/87357df6a75f5f656c85c2e5443de057f34f5d7c/output/res/layout/select_dialog_singlechoice_material.xml"
     },

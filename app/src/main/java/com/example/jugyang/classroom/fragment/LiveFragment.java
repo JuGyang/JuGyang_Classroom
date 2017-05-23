@@ -23,6 +23,9 @@ import com.example.jugyang.classroom.okHttp.listener.DisposeDataListener;
 import com.example.jugyang.classroom.ui.PhotoViewActivity;
 import com.example.jugyang.classroom.utils.MyLog;
 import com.example.jugyang.classroom.view.home.HomeHeaderLayout;
+import com.pili.pldroid.player.PLNetworkManager;
+
+import java.net.UnknownHostException;
 
 /**
  * Project Name:     Classroom_Toy_v1.0
@@ -32,6 +35,10 @@ import com.example.jugyang.classroom.view.home.HomeHeaderLayout;
  */
 
 public class LiveFragment extends Fragment implements AdapterView.OnItemClickListener{
+
+    private static final String[] DEFAULT_PLAYBACK_DOMAIN_ARRAY = {
+            "live.hkstv.hk.lxdns.com"
+    };
 
 
     private Activity mContext;
@@ -52,7 +59,15 @@ public class LiveFragment extends Fragment implements AdapterView.OnItemClickLis
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        try {
+            PLNetworkManager.getInstance().startDnsCacheService(getActivity(), DEFAULT_PLAYBACK_DOMAIN_ARRAY);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
         requestRecommandData();
+
+
     }
 
 
@@ -149,6 +164,16 @@ public class LiveFragment extends Fragment implements AdapterView.OnItemClickLis
 
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        PLNetworkManager.getInstance().stopDnsCacheService(getActivity());
+    }
 
-
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode != Activity.RESULT_OK) {
+            return;
+        }
+    }
 }

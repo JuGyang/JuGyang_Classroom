@@ -178,6 +178,10 @@
                 <action android:name="cn.bmob.push.action.NOTIFY" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name="com.example.jugyang.classroom.ui.PLVideoTextureActivity"
+            android:theme="@style/AppThemeFullscreen" />
     </application>
 
 </manifest>

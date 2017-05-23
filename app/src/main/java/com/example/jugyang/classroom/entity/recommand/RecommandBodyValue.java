@@ -26,6 +26,7 @@ public class RecommandBodyValue extends BaseModel {
     public String from;
     public String zan;
     public ArrayList<String> url;
+    public String liveUrl;
 
     //视频专用
     public String thumb;

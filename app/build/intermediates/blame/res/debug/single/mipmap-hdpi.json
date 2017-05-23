@@ -32,12 +32,12 @@
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/mipmap-hdpi/chat_voice_normal.png"
     },
     {
-        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/mipmap-hdpi/voice_right3.png",
-        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/mipmap-hdpi/voice_right3.png"
-    },
-    {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/mipmap-hdpi/login_bg.png",
         "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/mipmap-hdpi/login_bg.png"
+    },
+    {
+        "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/mipmap-hdpi/voice_right3.png",
+        "source": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/res/mipmap-hdpi/voice_right3.png"
     },
     {
         "merged": "/home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/build/intermediates/res/merged/debug/mipmap-hdpi/login_icon_password.png",

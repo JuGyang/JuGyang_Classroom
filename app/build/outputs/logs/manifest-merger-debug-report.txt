@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:2:1-175:12
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:2:1-178:12
 	package
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml
@@ -73,7 +73,7 @@ ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/An
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:20:22-78
 application
-ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:24:5-172:19
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:24:5-175:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jugyang/.android/build-cache/0dc298afaf394e2d7e17ed24f0064fa218fb3fb1/output/AndroidManifest.xml:9:5-20
 MERGED from [cn.bmob.android:bmob-sdk:3.5.0] /home/jugyang/.android/build-cache/e7cfb2ec2811caf532af452b6db4ac209b6e488d/output/AndroidManifest.xml:11:5-14:19
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/jugyang/.android/build-cache/8717b4792fe3f0272cc086ab30276ac32cf677b5/output/AndroidManifest.xml:9:5-20
@@ -302,6 +302,12 @@ action#cn.bmob.push.action.NOTIFY
 ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:167:17-69
 	android:name
 		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:167:25-66
+activity#com.example.jugyang.classroom.ui.PLVideoTextureActivity
+ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:171:9-172:56
+	android:theme
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:172:13-54
+	android:name
+		ADDED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml:171:19-60
 uses-sdk
 INJECTED from /home/jugyang/AndroidStudioProjects/JuGyang_Classroom/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [io.realm:realm-android-library:2.1.1] /home/jugyang/.android/build-cache/3fffaae53b2cb8cc5674644a819d629e21aecf3d/output/AndroidManifest.xml:5:5-7:41

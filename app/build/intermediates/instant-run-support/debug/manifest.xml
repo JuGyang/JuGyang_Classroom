@@ -179,6 +179,10 @@
             </intent-filter>
         </receiver>
 
+        <activity
+            android:name="com.example.jugyang.classroom.ui.PLVideoTextureActivity"
+            android:theme="@style/AppThemeFullscreen" />
+
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
             android:authorities="com.example.jugyang.classroom.com.android.tools.fd.runtime.InstantRunContentProvider"
